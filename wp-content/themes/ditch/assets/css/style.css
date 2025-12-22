@@ -44,6 +44,8 @@
 body {
   font-family: var(--font-base);
   color: var(--black);
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .text-xxs {
