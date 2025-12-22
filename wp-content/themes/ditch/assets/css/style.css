@@ -116,6 +116,10 @@ body {
 .col-2 {
     width: calc(100%/12*2);
 }
+.col-2.site-header__col.site-header__col--cta {
+    display: flex;
+    justify-content: end;
+
 
 .col-4 {
     width: calc(100%/12*4);
@@ -157,8 +161,21 @@ ul#primary-menu {
     display: flex;
     list-style-type: none;
     gap: 1.25rem;
+    padding: 0;
+    margin: 0;
 }
 
+.menu-item-type-custom a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+button.btn.btn-primary.text-xxs {
+    background: #fff;
+    padding: 1.5rem 2.5rem;
+    border: 0;
+    border-radius: 80px;
+}
 
 /* Aggiungi spazio alla hero per compensare l'header fisso */
 .hero {
