@@ -123,3 +123,10 @@ body {
 .col-6 {
     width: calc(100%/12*6);
 }
+
+/* HOMEPAGE */
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('wp-content/themes/ditch/assets/img/hero.jpg');
+}
