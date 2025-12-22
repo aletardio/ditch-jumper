@@ -58,7 +58,8 @@ body {
     text-transform: uppercase;
 }
 
-.text-xs {
+.text-xs,
+.menu-item {
     font-size: clamp(1rem, 0rem + 1.1111vw, 1.77775rem);
     font-family: var(--font-base);
     font-style: normal;
@@ -140,18 +141,24 @@ body {
 .site-header {
     position: relative;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: transparent;
 }
 
 /* Se vuoi l'header fisso in alto */
 .site-header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
 }
+
+ul#primary-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 1.25rem;
+}
+
 
 /* Aggiungi spazio alla hero per compensare l'header fisso */
 .hero {
