@@ -23,8 +23,6 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'ditch' ); ?></a>
-
 	<header role="banner" id="masthead" class="site-header">
 		<div class="site-header__inner">
 			<div class="col-4 site-header__col site-header__col--logo">

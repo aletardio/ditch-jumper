@@ -132,4 +132,28 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Header positioning */
+.site-header {
+    position: relative;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Se vuoi l'header fisso in alto */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Aggiungi spazio alla hero per compensare l'header fisso */
+.hero {
+    padding-top: 100px; /* Altezza dell'header */
 }
