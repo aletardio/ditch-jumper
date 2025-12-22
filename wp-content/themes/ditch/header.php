@@ -30,7 +30,7 @@
 			<div class="col-4 site-header__col site-header__col--logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-header__logo">
 					<img
-					src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/DITCH-JUMPER.svg' ); ?>"
+					src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/DITCH JUMPER.svg' ); ?>"
 					alt="Ditch Jumper"
 					>
 				</a>
@@ -40,11 +40,6 @@
 				<nav id="site-navigation"
 					class="main-navigation"
 					aria-label="<?php esc_attr_e( 'Primary menu', 'ditch' ); ?>">
-					<button class="menu-toggle"
-							aria-controls="primary-menu"
-							aria-expanded="false">
-					<?php esc_html_e( 'Primary Menu', 'ditch' ); ?>
-					</button>
 
 					<?php
 					wp_nav_menu(

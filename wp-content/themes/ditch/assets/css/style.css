@@ -108,7 +108,7 @@ body {
     padding: 1.85rem 3.75rem;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 .col-2 {
     width: calc(100%/12*2);
