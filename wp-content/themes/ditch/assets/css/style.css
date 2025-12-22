@@ -176,8 +176,3 @@ button.btn.btn-primary.text-xxs {
     border: 0;
     border-radius: 80px;
 }
-
-/* Aggiungi spazio alla hero per compensare l'header fisso */
-.hero {
-    padding-top: 100px; /* Altezza dell'header */
-}
