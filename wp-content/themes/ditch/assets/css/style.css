@@ -119,7 +119,7 @@ body {
 .col-2.site-header__col.site-header__col--cta {
     display: flex;
     justify-content: end;
-
+}
 
 .col-4 {
     width: calc(100%/12*4);
