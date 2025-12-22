@@ -1,5 +1,13 @@
 @font-face {
-  font-family: "InterCustom";
+  font-family: "ClashDisplay";
+  src: url("assets/fonts/ClashDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inclusive Sans";
   src: url("assets/fonts/InclusiveSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
@@ -7,17 +15,89 @@
 }
 
 @font-face {
-  font-family: "InterCustom";
+  font-family: "Inclusive Sans";
   src: url("assets/fonts/InclusiveSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
-:root {
-  --font-base: "InterCustom", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+@font-face {
+  font-family: "Switzer";
+  src: url("assets/fonts/Switzer-Medium.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
+
+:root {
+  --font-base: "Inclusive Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: "ClashDisplay", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-alt: "Switzer", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --black: #000;
+  --gray: #494E56;
+  --white: #fff;
+  --light-gray: #E1E6E8;
+}
+
 
 body {
   font-family: var(--font-base);
+}
+
+.text-xxs {
+    font-size: clamp(0.875rem, 0rem + 0.9722vw, 1.55556rem);
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.06225rem;
+    text-transform: uppercase;
+}
+
+.text-xs {
+    font-size: clamp(1rem, 0rem + 1.1111vw, 1.77775rem);
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    text-transform: uppercase;
+}
+
+.text-s {
+    font-size: clamp(1.375rem, 0rem + 1.5278vw, 2.44444rem);
+    font-family: var(--font-alt);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 118.182%;
+    letter-spacing: 0.04888rem;
+}
+
+.text-sm {
+    font-size: clamp(1.625rem, 0rem + 1.8055vw, 2.88888rem);
+    font-family: var(--font-alt);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115.385%;
+    letter-spacing: 0.05775rem;
+}
+
+.heading-xl {
+    font-size: clamp(3.125rem, 0rem + 3.4722vw, 5.55556rem);
+    font-family: var(--font-heading);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 96%;
+    letter-spacing: 0.11113rem;
+    text-transform: uppercase;
+}
+
+.heading-lg {
+    font-size: clamp(2.5rem, 0rem + 2.7778vw, 4.44444rem);
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.17775rem;
+    text-transform: uppercase;
 }
