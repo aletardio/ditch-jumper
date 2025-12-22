@@ -1,0 +1,31 @@
+/*
+Theme Name: Ditch Jumper
+Theme URI: https://headsd82.sg-host.com
+Author: Alessandro Tardio
+Version: 1.0
+Text Domain: miosito
+*/
+
+/* HEADER */
+.site-header {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.site-header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav__list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
