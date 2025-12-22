@@ -42,14 +42,12 @@
 					aria-label="<?php esc_attr_e( 'Primary menu', 'ditch' ); ?>">
 
 					<?php
-					wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
+					wp_nav_menu(array(
+						'theme_location' => 'Menu',  // Deve corrispondere esattamente al nome registrato
 						'menu_id'        => 'primary-menu',
 						'container'      => false,
 						'menu_class'     => 'main-navigation__list',
-					)
-					);
+					));
 					?>
 				</nav>
 			</div>
