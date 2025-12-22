@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "InterCustom";
+  src: url("assets/fonts/InclusiveSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "InterCustom";
+  src: url("assets/fonts/InclusiveSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-base: "InterCustom", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  font-family: var(--font-base);
+}
