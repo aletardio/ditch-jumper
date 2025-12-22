@@ -25,35 +25,43 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'ditch' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$ditch_description = get_bloginfo( 'description', 'display' );
-			if ( $ditch_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $ditch_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+	<header role="banner" id="masthead" class="site-header">
+		<div class="site-header__inner">
+			<div class="col-4 site-header__col site-header__col--logo">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-header__logo">
+					<img
+					src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/DITCH-JUMPER.svg' ); ?>"
+					alt="Ditch Jumper"
+					>
+				</a>
+			</div>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ditch' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			<div class="col-6 site-header__col site-header__col--nav">
+				<nav id="site-navigation"
+					class="main-navigation"
+					aria-label="<?php esc_attr_e( 'Primary menu', 'ditch' ); ?>">
+					<button class="menu-toggle"
+							aria-controls="primary-menu"
+							aria-expanded="false">
+					<?php esc_html_e( 'Primary Menu', 'ditch' ); ?>
+					</button>
+
+					<?php
+					wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						'container'      => false,
+						'menu_class'     => 'main-navigation__list',
+					)
+					);
+					?>
+				</nav>
+			</div>
+
+			<div class="col-2 site-header__col site-header__col--cta">
+				<button class="btn btn-primary text-xxs">Contattaci</button>
+			</div>
+		</div>
+	</header>
+
