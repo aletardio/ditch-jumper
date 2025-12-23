@@ -44,7 +44,6 @@ get_header();
 
             <div class="section-1-col-2">
             <?php
-            // Mappa semplice per 3 “card”
             for ( $i = 1; $i <= 3; $i++ ) :
                 $icon_field   = 'icona_' . $i . '_sezione_1';
                 $title_field  = 'titolo_' . $i . '_sezione_1';
@@ -55,7 +54,7 @@ get_header();
                 $text   = get_field( $text_field );
 
                 if ( ! $title && ! $text && ! $icon ) {
-                continue; // se la carta è vuota, salta
+                continue;
                 }
             ?>
                 <div class="info-section border">
