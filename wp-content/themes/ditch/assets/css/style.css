@@ -319,6 +319,8 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 
 .section-2 .page-header h2 {
     color: var(--white);
+    text-align: center;
+    padding-bottom: 3.75rem;
 }
 
 .section-2 .macchina-card {
@@ -411,7 +413,7 @@ button.btn.btn-secondary.text-xxs:hover svg path{
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .macchina-card__tags .tag {
@@ -429,8 +431,8 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 .macchina-card__description {
   font-size: 0.8rem;
   line-height: 1.4;
-  color: #f8f5f5;
-  margin-bottom: 0.9rem;
+  color: var(--white);
+  margin-bottom: 1rem;
 }
 
 /* Footer con freccia */
@@ -442,8 +444,6 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 .macchina-card__arrow {
   width: 32px;
   height: 32px;
-  border-radius: 999px;
-  border: 1px solid #f8f5f5;
   display: inline-flex;
   align-items: center;
   justify-content: center;
