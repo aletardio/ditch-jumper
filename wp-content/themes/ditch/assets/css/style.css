@@ -378,9 +378,7 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 
 /* Corpo (parte scura sotto) */
 .macchina-card__body {
-  background: #3b3338;
-  padding: 1.25rem 1.25rem 1rem;
-  border-radius: 0 0 14px 14px;
+  padding: 1.25rem 0;
 }
 
 /* Titolo + prezzo */

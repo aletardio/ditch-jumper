@@ -17,12 +17,12 @@
 
     <div class="macchina-card__body">
       <header class="macchina-card__header">
-        <h2 class="macchina-card__title">
+        <h2 class="macchina-card__title text-xxs">
           <?php the_title(); ?>
         </h2>
 
         <?php if ( $prezzo = get_field( 'prezzo' ) ) : ?>
-          <div class="macchina-card__price">
+          <div class="macchina-card__price text-sm">
             <?php echo esc_html( $prezzo ); ?>
           </div>
         <?php endif; ?>
@@ -30,20 +30,20 @@
 
       <div class="macchina-card__tags">
         <?php if ( $alimentazione = get_field( 'alimentazione' ) ) : ?>
-          <span class="tag"><?php echo esc_html( $alimentazione ); ?></span>
+          <span class="tag text-xxs"><?php echo esc_html( $alimentazione ); ?></span>
         <?php endif; ?>
 
         <?php if ( $anno = get_field( 'anno' ) ) : ?>
-          <span class="tag"><?php echo esc_html( $anno ); ?></span>
+          <span class="tag text-xxs"><?php echo esc_html( $anno ); ?></span>
         <?php endif; ?>
 
         <?php if ( $chilometraggio = get_field( 'chilometraggio' ) ) : ?>
-          <span class="tag"><?php echo esc_html( $chilometraggio ); ?></span>
+          <span class="tag text-xxs"><?php echo esc_html( $chilometraggio ); ?></span>
         <?php endif; ?>
       </div>
 
       <?php if ( $descr = get_field( 'descrizione' ) ) : ?>
-        <div class="macchina-card__description">
+        <div class="macchina-card__description text-xs text-initial">
           <?php echo esc_html( $descr ); ?>
         </div>
       <?php endif; ?>
