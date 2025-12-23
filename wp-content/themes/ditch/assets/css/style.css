@@ -463,3 +463,23 @@ button.btn.btn-secondary.text-xxs:hover svg path{
   outline: 2px solid #fff;
   outline-offset: 4px;
 }
+
+.hero-buttons.white button {
+    margin-top: 3.75rem;
+    width: fit-content;
+}
+
+.hero-buttons.white button.btn.btn-primary.text-xxs:hover {
+    border: 1px solid #fff;
+    color: #fff !important;
+}
+
+.hero-buttons.white {
+    display: flex;
+    justify-self: center;
+}
+
+button.btn.btn-primary.text-xxs a {
+    text-decoration: none;
+    color: #000;
+}
