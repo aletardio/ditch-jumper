@@ -1,3 +1,8 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Switzer:wght@400;500;600;700&display=swap');
+
 @font-face {
   font-family: "ClashDisplay";
   src: url("assets/fonts/ClashDisplay-Semibold.woff2") format("woff2");
@@ -56,10 +61,6 @@
     color: var(--light-gray);
 }
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Switzer:wght@400;500;600;700&display=swap');
 
 body {
   font-family: var(--font-base);
@@ -213,7 +214,7 @@ button.btn.btn-primary.text-xxs {
     gap: 1.56rem;
 }
 
-h1, p {
+h1, h2, h3, p {
     margin: 0;
 }
 
@@ -240,4 +241,25 @@ button.btn.btn-secondary.text-xxs {
 button.btn.btn-secondary.text-xxs svg {
     width: 1em;
     height: 1em;
+}
+
+/* SECTION 1 */
+.section-1 {
+    background-color: #fff;
+    padding: 7.5rem 0;
+}
+
+.container-section-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-1-col-1,
+.section-1-col-3 {
+    width: calc(100%/12*1);
+}
+
+.section-1-col-2 {
+    width: calc(100%/12*10);
 }
