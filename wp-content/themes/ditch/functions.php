@@ -138,7 +138,7 @@ add_action( 'widgets_init', 'ditch_widgets_init' );
  * Registra il post type "macchine"
  */
 function ditch_register_macchine_post_type() {
-    register_post_type( 'macchine',
+    register_post_type( 'macchina',
         array(
             'labels'      => array(
                 'name'          => __( 'Macchine' ),
@@ -146,6 +146,8 @@ function ditch_register_macchine_post_type() {
             ),
             'public'      => true,
             'has_archive' => true,
+            'supports'    => array( 'title', 'editor', 'thumbnail', 'excerpt', 'custom-fields' ),
+            'menu_icon'   => 'dashicons-car',
         )
     );
 }
