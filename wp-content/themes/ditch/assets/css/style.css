@@ -264,7 +264,7 @@ button.btn.btn-secondary.text-xxs:hover {
 }
 
 button.btn.btn-secondary.text-xxs:hover svg {
-    fill: #fff;
+    stroke: #fff;
 }
 
 /* SECTION 1 */
