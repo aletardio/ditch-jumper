@@ -99,17 +99,29 @@ get_header();
             
             <div class="macchine-grid">
                 <?php
+                // Debug: Verifica se il post type esiste
+                $post_types = get_post_types();
+                echo '<!-- DEBUG Post Types: ' . print_r($post_types, true) . ' -->';
+                
+                // Debug: Conta le macchine
+                $macchine_count = wp_count_posts('macchine');
+                echo '<!-- DEBUG Macchine Count: ' . print_r($macchine_count, true) . ' -->';
+                
                 $macchine_query = new WP_Query(array(
                     'post_type' => 'macchine',
                     'posts_per_page' => 6,
                     'post_status' => 'publish'
                 ));
 
+                echo '<!-- DEBUG Query Results: ' . $macchine_query->found_posts . ' posts found -->';
+
                 if ($macchine_query->have_posts()) :
                     while ($macchine_query->have_posts()) : $macchine_query->the_post();
                         get_template_part('template-parts/content', 'macchina');
                     endwhile;
                     wp_reset_postdata();
+                else:
+                    echo '<div class="no-macchine">Nessuna macchina trovata. Crea delle macchine nel pannello admin.</div>';
                 endif;
                 ?>
             </div>

@@ -325,6 +325,14 @@ button.btn.btn-secondary.text-xxs:hover svg path{
     background: #fff;
 }
 
+.no-macchine {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
 /* MACCHINE GRID */
 .container-macchine {
     max-width: 1200px;
