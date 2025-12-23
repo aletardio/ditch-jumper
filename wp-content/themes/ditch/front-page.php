@@ -116,7 +116,6 @@ get_header();
                 ?>
             </div>
             <div class="hero-buttons white">
-                <button class="btn btn-primary text-xxs">
                     <?php 
                     $cta_text  = get_field( 'cta_sezione_2' );      // testo bottone
                     $cta_link  = get_field( 'link_sezione_2' );     // URL (stringa)
@@ -126,6 +125,7 @@ get_header();
                         $href = $cta_link ? $cta_link : '#';
                     ?>
                         <a href="<?php echo esc_url( $href ); ?>">
+                <button class="btn btn-primary text-xxs">
                         <span class="btn-text"><?php echo esc_html( $cta_text ); ?></span>
                         </a>
                     <?php endif; ?>
