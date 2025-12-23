@@ -370,6 +370,7 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 .macchina-card__image {
   background: #fff;
   padding: 1.75rem 1.25rem;
+  border-radius: 10px !important;
 }
 
 .macchina-card__image img {
