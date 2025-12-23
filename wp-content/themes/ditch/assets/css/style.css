@@ -207,3 +207,27 @@ button.btn.btn-primary.text-xxs {
     justify-content: start;
     flex-direction: column;
 }
+
+h1.heading-xl.white {
+    width: 60%;
+}
+
+p.text-s {
+    width: 70%;
+}
+
+button.btn.btn-secondary.text-xxs {
+    width: fit-content;
+    background: #fff;
+    border: 0;
+    padding: 1.75rem 2.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+button.btn.btn-secondary.text-xxs svg {
+    width: 1em;
+    height: 1em;
+}
