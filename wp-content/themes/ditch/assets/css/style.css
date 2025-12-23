@@ -56,6 +56,10 @@
     color: var(--light-gray);
 }
 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Switzer:wght@400;500;600;700&display=swap');
 
 body {
   font-family: var(--font-base);
@@ -206,10 +210,16 @@ button.btn.btn-primary.text-xxs {
     display: flex;
     justify-content: start;
     flex-direction: column;
+    gap: 1.56rem;
+}
+
+h1, p {
+    margin: 0;
 }
 
 h1.heading-xl.white {
     width: 60%;
+    padding-bottom: 3.56rem;
 }
 
 p.text-s {
