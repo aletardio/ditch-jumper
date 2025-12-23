@@ -105,9 +105,15 @@ get_header();
                 $post_types = get_post_types();
                 echo '<!-- DEBUG Post Types: ' . print_r($post_types, true) . ' -->';
                 
-                // Debug: Conta le macchine
-                $macchine_count = wp_count_posts('macchine');
-                echo '<!-- DEBUG Macchine Count: ' . print_r($macchine_count, true) . ' -->';
+                // Debug: Verifica specificamente il post type macchine
+                if (post_type_exists('macchine')) {
+                    echo '<!-- DEBUG: Post type macchine ESISTE -->';
+                    // Debug: Conta le macchine
+                    $macchine_count = wp_count_posts('macchine');
+                    echo '<!-- DEBUG Macchine Count: ' . print_r($macchine_count, true) . ' -->';
+                } else {
+                    echo '<!-- DEBUG: Post type macchine NON ESISTE -->';
+                }
                 
                 $macchine_query = new WP_Query(array(
                     'post_type' => 'macchine',

@@ -135,6 +135,30 @@ function ditch_widgets_init() {
 add_action( 'widgets_init', 'ditch_widgets_init' );
 
 /**
+ * Registra il post type "macchine"
+ */
+function ditch_register_macchine_post_type() {
+    register_post_type( 'macchine',
+        array(
+            'labels'      => array(
+                'name'          => __( 'Macchine' ),
+                'singular_name' => __( 'Macchina' ),
+            ),
+            'public'      => true,
+            'has_archive' => true,
+        )
+    );
+}
+add_action( 'init', 'ditch_register_macchine_post_type' );
+
+// Forza il flush delle rewrite rules per il nuovo post type
+function ditch_flush_rewrite_rules() {
+    ditch_register_macchine_post_type();
+    flush_rewrite_rules();
+}
+register_activation_hook( __FILE__, 'ditch_flush_rewrite_rules' );
+
+/**
  * Enqueue scripts and styles.
  */
 function ditch_scripts() {
