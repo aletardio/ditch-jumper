@@ -262,4 +262,14 @@ button.btn.btn-secondary.text-xxs svg {
 
 .section-1-col-2 {
     width: calc(100%/12*10);
+    display: flex;
+    flex-direction: row;
+}
+
+.section-1-col-2 .info-section,
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2.5rem;
 }
