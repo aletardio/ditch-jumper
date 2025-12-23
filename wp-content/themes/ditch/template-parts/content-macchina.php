@@ -7,8 +7,12 @@
 
 ?>
 
+<?php 
+$link_macchina = get_field('link_macchina');
+$link_url = $link_macchina ? $link_macchina : get_permalink();
+?>
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'macchina-card' ); ?>>
-  <div class="macchina-card__inner">
+  <a href="<?php echo esc_url($link_url); ?>" class="macchina-card__inner">
     <?php if ( has_post_thumbnail() ) : ?>
       <div class="macchina-card__image">
         <?php the_post_thumbnail( 'large' ); ?>
