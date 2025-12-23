@@ -12,10 +12,10 @@ get_header();
     <!-- Hero Section -->
     <section class="hero">
         <div class="container-hero ">
-            <h1 class="heading-xl">
+            <h1 class="heading-xl white">
                 AUTO USATE, GARANTITE E SUBITO DISPONIBILI
             </h1>
-            <div class="hero-buttons">
+            <div class="hero-buttons white">
                 <p>
                     Veicoli con manutenzione certificata e chilometri garantiti
                 </p>
