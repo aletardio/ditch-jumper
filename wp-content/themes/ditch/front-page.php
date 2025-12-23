@@ -47,7 +47,7 @@ get_header();
                         </h3>
                     </div>
                     <div class="paragraph">
-                        <p class="black text-xs">
+                        <p class="black text-xs text-initial">
                             Informazioni chiare, dati trasparenti e supporto costante, con comunicazioni sincere e puntuali in ogni fase.
                         </p>
                     </div>
@@ -62,7 +62,7 @@ get_header();
                         </h3>
                     </div>
                     <div class="paragraph">
-                        <p class="black text-xs">
+                        <p class="black text-xs text-initial">
                             Informazioni chiare, dati trasparenti e supporto costante, con comunicazioni sincere e puntuali in ogni fase.
                         </p>
                     </div>

@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: "Switzer";
-  src: url("../fonts/Switzer-Medium.woff2") format("woff2");
+  src: url("../fonts/Switzer-Semibold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -272,4 +272,12 @@ button.btn.btn-secondary.text-xxs svg {
     flex-direction: column;
     align-items: center;
     padding: 0 2.5rem;
+}
+
+.paragraph {
+    text-align: center;
+}
+
+.text-initial {
+    text-transform: initial;
 }
