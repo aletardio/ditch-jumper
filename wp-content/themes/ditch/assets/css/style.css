@@ -451,10 +451,4 @@ button.btn.btn-secondary.text-xxs:hover svg path{
   color: #f8f5f5;
   text-decoration: none;
   font-size: 1.1rem;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.macchina-card__arrow:hover {
-  background: #f8f5f5;
-  color: #3b3338;
 }
