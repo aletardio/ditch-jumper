@@ -258,7 +258,7 @@ button.btn.btn-secondary.text-xxs svg {
     transition: 0.3s;
 }
 
-button.btn.btn-primary.text-xxs:hover {
+button.btn.btn-secondary.text-xxs:hover {
     background: #000;
     color: #fff;
 }
