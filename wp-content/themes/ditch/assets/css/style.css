@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "ClashDisplay";
-  src: url("assets/fonts/ClashDisplay-Semibold.woff2") format("woff2");
+  src: url("../fonts/ClashDisplay-Semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: "Inclusive Sans";
-  src: url("assets/fonts/InclusiveSans-SemiBold.woff2") format("woff2");
+  src: url("../fonts/InclusiveSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "Inclusive Sans";
-  src: url("assets/fonts/InclusiveSans-Bold.woff2") format("woff2");
+  src: url("../fonts/InclusiveSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: "Switzer";
-  src: url("assets/fonts/Switzer-Medium.woff2") format("woff2");
+  src: url("../fonts/Switzer-Medium.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
