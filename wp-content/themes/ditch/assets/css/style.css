@@ -310,3 +310,8 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 .border {
     border-right: 1px solid #000;
 }
+
+/* SECTION 2 */
+.section-2 {
+    background-color: #000;
+}
