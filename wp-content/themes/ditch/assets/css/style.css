@@ -327,9 +327,8 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 }
 
 .container-macchine {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 3.75rem 1.5rem;
+  padding: 3.75rem;
 }
 
 .macchine-grid {
@@ -359,7 +358,6 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 }
 
 .macchina-card__inner {
-  background: #f5d9dc; /* rosa chiaro immagine */
   border-radius: 14px;
   overflow: hidden;
   display: flex;
@@ -368,8 +366,8 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 
 /* Immagine */
 .macchina-card__image {
-  background: #f5d9dc;
-  padding: 1.75rem 1.25rem 0;
+  background: #fff;
+  padding: 1.75rem 1.25rem;
 }
 
 .macchina-card__image img {

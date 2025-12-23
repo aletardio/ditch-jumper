@@ -23,7 +23,7 @@
 
         <?php if ( $prezzo = get_field( 'prezzo' ) ) : ?>
           <div class="macchina-card__price">
-            <?php echo esc_html( $prezzo ); ?> €
+            <?php echo esc_html( $prezzo ); ?>
           </div>
         <?php endif; ?>
       </header>
@@ -38,7 +38,7 @@
         <?php endif; ?>
 
         <?php if ( $chilometraggio = get_field( 'chilometraggio' ) ) : ?>
-          <span class="tag"><?php echo esc_html( $chilometraggio ); ?> KM</span>
+          <span class="tag"><?php echo esc_html( $chilometraggio ); ?></span>
         <?php endif; ?>
       </div>
 
@@ -50,7 +50,14 @@
 
       <div class="macchina-card__footer">
         <a href="<?php the_permalink(); ?>" class="macchina-card__arrow" aria-label="Dettagli veicolo">
-          →
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                <mask id="mask0_189_1358" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="26" height="26">
+                    <rect width="26" height="26" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_189_1358)">
+                    <path d="M17.5226 14.0835H4.33301V11.9168H17.5226L11.4559 5.85016L12.9997 4.3335L21.6663 13.0002L12.9997 21.6668L11.4559 20.1502L17.5226 14.0835Z" fill="white"/>
+                </g>
+            </svg>
         </a>
       </div>
     </div>
