@@ -182,6 +182,12 @@ button.btn.btn-primary.text-xxs {
     padding: 1.5rem 2.5rem;
     border: 0;
     border-radius: 80px;
+    transition: 0.3s ease;
+}
+
+button.btn.btn-primary.text-xxs:hover {
+    background: #000;
+    color: #fff;
 }
 
 /* HOMEPAGE */
@@ -243,11 +249,22 @@ button.btn.btn-secondary.text-xxs {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    transition: 0.3s;
 }
 
 button.btn.btn-secondary.text-xxs svg {
     width: 1em;
     height: 1em;
+    transition: 0.3s;
+}
+
+button.btn.btn-primary.text-xxs:hover {
+    background: #000;
+    color: #fff;
+}
+
+button.btn.btn-secondary.text-xxs:hover svg {
+    fill: #fff;
 }
 
 /* SECTION 1 */
