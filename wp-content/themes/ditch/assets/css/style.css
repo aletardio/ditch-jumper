@@ -474,6 +474,10 @@ button.btn.btn-secondary.text-xxs:hover svg path{
     color: #fff !important;
 }
 
+.hero-buttons.white button.btn.btn-primary.text-xxs:hover a {
+    color: #fff !important;
+}
+
 .hero-buttons.white {
     display: flex;
     justify-self: center;
