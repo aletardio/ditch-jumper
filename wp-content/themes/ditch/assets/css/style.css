@@ -263,7 +263,7 @@ button.btn.btn-secondary.text-xxs:hover {
     color: #fff;
 }
 
-button.btn.btn-secondary.text-xxs:hover svg {
+button.btn.btn-secondary.text-xxs:hover svg path{
     fill: #fff !important;
 }
 
