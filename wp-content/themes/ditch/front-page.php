@@ -16,7 +16,7 @@ get_header();
                 AUTO USATE, GARANTITE E SUBITO DISPONIBILI
             </h1>
             <div class="hero-buttons white">
-                <p>
+                <p class="text-s">
                     Veicoli con manutenzione certificata e chilometri garantiti
                 </p>
                 <button class="btn btn-secondary text-xxs">
