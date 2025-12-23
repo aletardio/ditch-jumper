@@ -39,63 +39,59 @@ get_header();
         </div>
     </section>
     <section class="section-1">
-        <div class="container-section-1">
-            <div class="section-1-col-1"></div>
+  <div class="container-section-1">
+    <div class="section-1-col-1"></div>
 
-            <div class="section-1-col-2">
-            <?php
-            for ( $i = 1; $i <= 3; $i++ ) :
-                $icon_field   = 'icona_' . $i . '_sezione_1';
-                $title_field  = 'titolo_' . $i . '_sezione_1';
-                $text_field   = 'descrizione_' . $i . '_sezione_1';
+    <div class="section-1-col-2">
+      <?php
+      // 3 card configurate con ACF: icona_X_sezione_1, titolo_X_sezione_1, descrizione_X_sezione_1
+      for ( $i = 1; $i <= 3; $i++ ) :
 
-                $icon   = get_field( $icon_field );
-                $title  = get_field( $title_field );
-                $text   = get_field( $text_field );
+        $icon_field  = 'icona_' . $i . '_sezione_1';
+        $title_field = 'titolo_' . $i . '_sezione_1';
+        $text_field  = 'descrizione_' . $i . '_sezione_1';
 
-                if ( ! $title && ! $text && ! $icon ) {
-                continue;
-                }
-            ?>
-                <div class="info-section border">
-                <div class="title-section">
-                    <?php
-                    // Se l’icona è un campo “Image” ACF
-                    if ( ! empty( $icon ) && is_array( $icon ) ) :
-                    // Usa size / url che preferisci
-                    $icon_url = $icon['url'];
-                    $icon_alt = $icon['alt'] ?: $title;
-                    ?>
-                    <img src="<?php echo esc_url( $icon_url ); ?>"
-                        alt="<?php echo esc_attr( $icon_alt ); ?>">
-                    <?php
-                    // Se l’icona è un “Icon picker” che restituisce HTML/SVG
-                    elseif ( ! empty( $icon ) && ! is_array( $icon ) ) :
-                    echo $icon; // già HTML/SVG
-                    endif;
-                    ?>
+        $icon  = get_field( $icon_field );      // stringa (URL SVG)
+        $title = get_field( $title_field );     // testo
+        $text  = get_field( $text_field );      // textarea
 
-                    <?php if ( $title ) : ?>
-                    <h3 class="black text-sm">
-                        <?php echo esc_html( $title ); ?>
-                    </h3>
-                    <?php endif; ?>
-                </div>
+        if ( ! $title && ! $text && ! $icon ) {
+          continue; // se tutti vuoti, salta la card
+        }
+      ?>
+        <div class="info-section border">
+          <div class="title-section">
+            <?php if ( $icon ) : ?>
+              <img
+                src="<?php echo esc_url( $icon ); ?>"
+                alt="<?php echo esc_attr( $title ); ?>"
+                width="48"
+                height="48"
+              >
+            <?php endif; ?>
 
-                <?php if ( $text ) : ?>
-                    <div class="paragraph">
-                    <p class="black text-xs text-initial">
-                        <?php echo esc_html( $text ); ?>
-                    </p>
-                    </div>
-                <?php endif; ?>
-                </div>
-            <?php endfor; ?>
+            <?php if ( $title ) : ?>
+              <h3 class="black text-sm">
+                <?php echo esc_html( $title ); ?>
+              </h3>
+            <?php endif; ?>
+          </div>
+
+          <?php if ( $text ) : ?>
+            <div class="paragraph">
+              <p class="black text-xs text-initial">
+                <?php echo esc_html( $text ); ?>
+              </p>
             </div>
-
-            <div class="section-1-col-3"></div>
+          <?php endif; ?>
         </div>
-    </section>
+      <?php endfor; ?>
+    </div>
+
+    <div class="section-1-col-3"></div>
+  </div>
+</section>
+
 
 
     <!-- Contenuto della pagina home -->
