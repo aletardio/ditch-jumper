@@ -433,6 +433,7 @@ button.btn.btn-secondary.text-xxs:hover svg path{
   line-height: 1.4;
   color: var(--white);
   margin-bottom: 1rem;
+  width: 60%;
 }
 
 /* Footer con freccia */

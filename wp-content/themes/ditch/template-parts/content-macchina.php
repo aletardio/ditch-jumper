@@ -44,7 +44,7 @@
 
       <?php if ( $descr = get_field( 'descrizione' ) ) : ?>
         <div class="macchina-card__description text-xs text-initial">
-          <?php echo esc_html( $descr ); ?>
+          <?php echo wp_kses_post( $descr ); ?>
         </div>
       <?php endif; ?>
 
