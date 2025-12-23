@@ -13,14 +13,18 @@ get_header();
     <section class="hero">
         <div class="container-hero ">
             <h1 class="heading-xl white">
-                AUTO USATE, GARANTITE E SUBITO DISPONIBILI
+                <?php echo get_field('titolo_hero') ? esc_html(get_field('titolo_hero')) : 'AUTO USATE, GARANTITE E SUBITO DISPONIBILI'; ?>
             </h1>
             <div class="hero-buttons white">
                 <p class="text-s">
-                    Veicoli con manutenzione certificata e chilometri garantiti
+                    <?php echo get_field('descrizione_hero') ? esc_html(get_field('descrizione_hero')) : 'Veicoli con manutenzione certificata e chilometri garantiti'; ?>
                 </p>
+                <?php 
+                $cta_text = get_field('cta_hero');
+                if ($cta_text): 
+                ?>
                 <button class="btn btn-secondary text-xxs">
-                    <span class="btn-text">LE NOSTRE AUTO</span>
+                    <span class="btn-text"><?php echo esc_html($cta_text); ?></span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <mask id="mask0_184_842" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
                             <rect width="20" height="20" fill="#D9D9D9"/>
@@ -30,6 +34,7 @@ get_header();
                         </g>
                     </svg>
                 </button>
+                <?php endif; ?>
             </div>
         </div>
     </section>
