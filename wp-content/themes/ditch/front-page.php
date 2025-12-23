@@ -92,7 +92,28 @@ get_header();
         </div>
     </section>
     <section class="section-2">
-                    
+        <div class="container-macchine">
+            <header class="page-header">
+                <h2 class="heading-lg white">Le Nostre Macchine</h2>
+            </header>
+            
+            <div class="macchine-grid">
+                <?php
+                $macchine_query = new WP_Query(array(
+                    'post_type' => 'macchine',
+                    'posts_per_page' => 6,
+                    'post_status' => 'publish'
+                ));
+
+                if ($macchine_query->have_posts()) :
+                    while ($macchine_query->have_posts()) : $macchine_query->the_post();
+                        get_template_part('template-parts/content', 'macchina');
+                    endwhile;
+                    wp_reset_postdata();
+                endif;
+                ?>
+            </div>
+        </div>
     </section>
 
 
