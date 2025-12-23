@@ -464,10 +464,10 @@ button.btn.btn-secondary.text-xxs:hover svg path{
   outline-offset: 4px;
 }
 
-.hero-buttons.white button {
+.hero-buttons.white button.btn.btn-primary.text-xxs {
     margin-top: 3.75rem;
     width: fit-content;
-    border: 1px solid #000;
+    border: 1px solid #000 !important;
 }
 
 .hero-buttons.white button.btn.btn-primary.text-xxs:hover {
