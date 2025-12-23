@@ -326,154 +326,138 @@ button.btn.btn-secondary.text-xxs:hover svg path{
     padding: 0.88rem;
 }
 
-.no-macchine {
-    grid-column: 1 / -1;
-    text-align: center;
-    color: var(--white);
-    font-size: 1.2rem;
-    padding: 2rem;
-}
-
-/* MACCHINE GRID */
 .container-macchine {
-    margin: 0 auto;
-    padding: 3.75rem;
-}
-
-.page-header {
-    text-align: center;
-    margin-bottom: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3.75rem 1.5rem;
 }
 
 .macchine-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem;
 }
 
+@media (max-width: 900px) {
+  .macchine-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .macchine-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card veicolo */
 .macchina-card {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #3b3338;
+  border-radius: 18px;
+  padding: 0.75rem;
+  color: #fff;
 }
 
-.macchina-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+.macchina-card__inner {
+  background: #f5d9dc; /* rosa chiaro immagine */
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Immagine */
 .macchina-card__image {
-    overflow: hidden;
-    background: #fff;
-    border-radius: 10px;
-    padding: 2rem 1rem;
+  background: #f5d9dc;
+  padding: 1.75rem 1.25rem 0;
 }
 
 .macchina-card__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.macchina-card:hover .macchina-card__image img {
-    transform: scale(1.05);
+/* Corpo (parte scura sotto) */
+.macchina-card__body {
+  background: #3b3338;
+  padding: 1.25rem 1.25rem 1rem;
+  border-radius: 0 0 14px 14px;
 }
 
-.macchina-card__content {
-    padding: 1rem 0;
+/* Titolo + prezzo */
+.macchina-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .macchina-card__title {
-    margin: 0 0 1rem 0;
-    font-size: 1.25rem;
-    font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f8f5f5;
+  margin: 0;
 }
 
-.macchina-card__title a {
-    color: var(--black);
-    text-decoration: none;
-    transition: color 0.3s ease;
+.macchina-card__price {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
 }
 
-.macchina-card__title a:hover {
-    color: var(--gray);
+/* Tag (alimentazione, anno, km) */
+.macchina-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
-.macchina-card__specs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-    margin-bottom: 1rem;
+.macchina-card__tags .tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: #f8f5f5;
+  color: #000;
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 
-.spec-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-.spec-label {
-    font-size: 0.75rem;
-    color: var(--gray);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.spec-value {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--black);
-}
-
-.spec-item.prezzo .spec-value {
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: #2563eb;
-}
-
+/* Descrizione */
 .macchina-card__description {
-    margin-bottom: 1.5rem;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    color: var(--gray);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #f8f5f5;
+  margin-bottom: 0.9rem;
 }
 
+/* Footer con freccia */
 .macchina-card__footer {
-    text-align: center;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.macchina-card__footer .btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: var(--black);
-    color: var(--white);
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background 0.3s ease;
+.macchina-card__arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px solid #f8f5f5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8f5f5;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.macchina-card__footer .btn:hover {
-    background: #333;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .macchine-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .macchine-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .macchina-card__specs {
-        grid-template-columns: 1fr;
-    }
+.macchina-card__arrow:hover {
+  background: #f8f5f5;
+  color: #3b3338;
 }

@@ -7,72 +7,52 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('macchina-card'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'macchina-card' ); ?>>
+  <div class="macchina-card__inner">
     <?php if ( has_post_thumbnail() ) : ?>
-        <div class="macchina-card__image">
-            <a href="<?php the_permalink(); ?>">
-                <?php the_post_thumbnail('medium'); ?>
-            </a>
-        </div>
+      <div class="macchina-card__image">
+        <?php the_post_thumbnail( 'large' ); ?>
+      </div>
     <?php endif; ?>
 
-    <div class="macchina-card__content">
-        <header class="macchina-card__header">
-            <h2 class="macchina-card__title white text-xxs">
-                <a href="<?php the_permalink(); ?>">
-                    <?php the_title(); ?>
-                </a>
-            </h2>
-        </header>
+    <div class="macchina-card__body">
+      <header class="macchina-card__header">
+        <h2 class="macchina-card__title">
+          <?php the_title(); ?>
+        </h2>
 
-        <div class="macchina-card__specs">
-            <?php
-            // Recupera i campi ACF
-            $prezzo = get_field('prezzo');
-            $alimentazione = get_field('alimentazione');
-            $anno = get_field('anno');
-            $chilometraggio = get_field('chilometraggio');
-            ?>
+        <?php if ( $prezzo = get_field( 'prezzo' ) ) : ?>
+          <div class="macchina-card__price">
+            <?php echo esc_html( $prezzo ); ?> €
+          </div>
+        <?php endif; ?>
+      </header>
 
-            <?php if ( $prezzo ) : ?>
-                <div class="spec-item prezzo">
-                    <span class="spec-label">Prezzo:</span>
-                    <span class="spec-value"><?php echo esc_html($prezzo); ?></span>
-                </div>
-            <?php endif; ?>
-
-            <?php if ( $alimentazione ) : ?>
-                <div class="spec-item">
-                    <span class="spec-label">Alimentazione:</span>
-                    <span class="spec-value"><?php echo esc_html($alimentazione); ?></span>
-                </div>
-            <?php endif; ?>
-
-            <?php if ( $anno ) : ?>
-                <div class="spec-item">
-                    <span class="spec-label">Anno:</span>
-                    <span class="spec-value"><?php echo esc_html($anno); ?></span>
-                </div>
-            <?php endif; ?>
-
-            <?php if ( $chilometraggio ) : ?>
-                <div class="spec-item">
-                    <span class="spec-label">Chilometraggio:</span>
-                    <span class="spec-value"><?php echo esc_html($chilometraggio); ?></span>
-                </div>
-            <?php endif; ?>
-        </div>
-
-        <?php if ( get_field('descrizione') ) : ?>
-            <div class="macchina-card__description">
-                <p><?php echo esc_html(get_field('descrizione')); ?></p>
-            </div>
+      <div class="macchina-card__tags">
+        <?php if ( $alimentazione = get_field( 'alimentazione' ) ) : ?>
+          <span class="tag"><?php echo esc_html( $alimentazione ); ?></span>
         <?php endif; ?>
 
-        <div class="macchina-card__footer">
-            <a href="<?php the_permalink(); ?>" class="btn btn-primary text-xs">
-                Dettagli
-            </a>
+        <?php if ( $anno = get_field( 'anno' ) ) : ?>
+          <span class="tag"><?php echo esc_html( $anno ); ?></span>
+        <?php endif; ?>
+
+        <?php if ( $chilometraggio = get_field( 'chilometraggio' ) ) : ?>
+          <span class="tag"><?php echo esc_html( $chilometraggio ); ?> KM</span>
+        <?php endif; ?>
+      </div>
+
+      <?php if ( $descr = get_field( 'descrizione' ) ) : ?>
+        <div class="macchina-card__description">
+          <?php echo esc_html( $descr ); ?>
         </div>
+      <?php endif; ?>
+
+      <div class="macchina-card__footer">
+        <a href="<?php the_permalink(); ?>" class="macchina-card__arrow" aria-label="Dettagli veicolo">
+          →
+        </a>
+      </div>
     </div>
+  </div>
 </article>
