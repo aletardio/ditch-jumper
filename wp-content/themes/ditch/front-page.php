@@ -94,7 +94,9 @@ get_header();
     <section class="section-2">
         <div class="container-macchine">
             <header class="page-header">
-                <h2 class="heading-lg white">Le Nostre Macchine</h2>
+                <h2 class="heading-xl white">
+                    <?php echo get_field('titolo_sezione_2') ? esc_html(get_field('titolo_sezione_2')) : 'Il nostro parco macchine'; ?>
+                </h2>
             </header>
             
             <div class="macchine-grid">
