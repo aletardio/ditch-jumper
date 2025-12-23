@@ -252,7 +252,7 @@ button.btn.btn-secondary.text-xxs svg {
 .container-section-1 {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .section-1-col-1,
