@@ -452,3 +452,13 @@ button.btn.btn-secondary.text-xxs:hover svg path{
   text-decoration: none;
   font-size: 1.1rem;
 }
+
+.macchina-card__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.macchina-card__link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
