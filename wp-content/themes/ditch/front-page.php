@@ -116,18 +116,20 @@ get_header();
                 ?>
             </div>
             <div class="hero-buttons white">
-                <?php 
-                $cta_text  = get_field( 'cta_sezione_2' );      // testo bottone
-                $cta_link  = get_field( 'link_sezione_2' );     // URL (stringa)
-                
-                if ( $cta_text ) :
-                    // se non esiste il link uso # come fallback
-                    $href = $cta_link ? $cta_link : '#';
-                ?>
-                    <a href="<?php echo esc_url( $href ); ?>" class="btn btn-secondary text-xxs">
-                    <span class="btn-text"><?php echo esc_html( $cta_text ); ?></span>
-                    </a>
-                <?php endif; ?>
+                <button class="btn btn-primary text-xxs">
+                    <?php 
+                    $cta_text  = get_field( 'cta_sezione_2' );      // testo bottone
+                    $cta_link  = get_field( 'link_sezione_2' );     // URL (stringa)
+                    
+                    if ( $cta_text ) :
+                        // se non esiste il link uso # come fallback
+                        $href = $cta_link ? $cta_link : '#';
+                    ?>
+                        <a href="<?php echo esc_url( $href ); ?>">
+                        <span class="btn-text"><?php echo esc_html( $cta_text ); ?></span>
+                        </a>
+                    <?php endif; ?>
+                </button>
             </div>
         </div>
     </section>
