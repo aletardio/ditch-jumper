@@ -18,7 +18,7 @@
 
     <div class="macchina-card__content">
         <header class="macchina-card__header">
-            <h2 class="macchina-card__title">
+            <h2 class="macchina-card__title white text-xxs">
                 <a href="<?php the_permalink(); ?>">
                     <?php the_title(); ?>
                 </a>

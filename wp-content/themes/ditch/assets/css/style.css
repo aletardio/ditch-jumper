@@ -322,7 +322,8 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 }
 
 .section-2 .macchina-card {
-    background: #fff;
+    background: #494E56;
+    padding: 0.88rem;
 }
 
 .no-macchine {
@@ -335,9 +336,8 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 
 /* MACCHINE GRID */
 .container-macchine {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 3.75rem;
 }
 
 .page-header {
@@ -366,8 +366,10 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 }
 
 .macchina-card__image {
-    height: 200px;
     overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem 1rem;
 }
 
 .macchina-card__image img {
@@ -382,7 +384,7 @@ button.btn.btn-secondary.text-xxs:hover svg path{
 }
 
 .macchina-card__content {
-    padding: 1.5rem;
+    padding: 1rem 0;
 }
 
 .macchina-card__title {
