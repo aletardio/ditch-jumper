@@ -186,18 +186,25 @@ button.btn.btn-primary.text-xxs {
 
 /* HOMEPAGE */
 .hero {
-    min-height: 100vh;
-    width: 100%;
-    background-image: url('http://headsd82.sg-host.com/wp-content/uploads/2025/12/hero.jpg'), linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.30) 100%);
-    background-size: cover, 100%;
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
-    margin-top: 0;
-    padding-top: 0;
-    display: flex;
-    justify-content: start;
-    align-items: end;
+  min-height: 100vh;
+  width: 100%;
+
+  /* Prima il gradient (sotto), poi l'immagine (sopra) → invertiamo */
+  background-image:
+    linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.30) 100%),
+    url("https://headsd82.sg-host.com/wp-content/uploads/2025/12/hero.jpg");
+
+  background-size: 100%, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
+
 
 .container-hero {
     display: flex;
@@ -272,6 +279,7 @@ button.btn.btn-secondary.text-xxs svg {
     flex-direction: column;
     align-items: center;
     padding: 0 2.5rem;
+    gap: 1.88rem;
 }
 
 .paragraph {
