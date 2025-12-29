@@ -161,7 +161,7 @@ get_header();
     </section>
 
     <!-- SECTION 4 -->
-     <section id="chi-siamo" class="section-1">
+     <section id="chi-siamo" class="section-4">
         <div class="container-section-4">
             <div class="col-7">
                 <h6 class="text-xxs black">
@@ -173,7 +173,12 @@ get_header();
             </div>
             <div class="col-1"></div>
             <div class="col-4">
-
+                <?php 
+                $immagine = get_field('immagine_1_sezione_4');
+                if($immagine) {
+                    echo wp_get_attachment_image($immagine, 'full', false, array('class' => 'img-fluid'));
+                }
+                ?>
             </div>
         </div>
         <div class="container-section-4">
