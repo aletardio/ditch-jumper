@@ -496,6 +496,13 @@ button.btn.btn-primary.text-xxs a {
 
 /* SECTION 3*/
 
+.container-section-3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
 .funzionamento-container {
     display: flex;
     flex-direction: row;

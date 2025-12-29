@@ -141,9 +141,9 @@ get_header();
 
     <!-- SECTION 3 -->
     <section class="section-1">
-        <div class="container-section-1">
+        <div class="container-section-3">
             <div class="page-header">
-                <h2 class="heading-xl white">
+                <h2 class="heading-xl black">
                     <?php echo get_field('titolo_sezione_3') ? esc_html(get_field('titolo_sezione_3')) : 'Come funziona'; ?>
                 </h2>
             </div>
