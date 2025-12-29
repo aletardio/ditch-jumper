@@ -250,7 +250,7 @@ get_header();
 
     <!-- SECTION 6 -->
     <section id="contatti" class="section-6">
-        <div class="container-section-1 ">
+        <div class="container-section-1 dark-gray">
             <div class="col-7">
                 <div class="heading">
                     <h2 class="heading-xl white">

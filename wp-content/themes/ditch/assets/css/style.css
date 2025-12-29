@@ -670,7 +670,11 @@ img.img-fluid {
     flex-shrink: 0;
 }
 
-/* SECTION 5 */
+/* SECTION 6 */
 .px-l {
   padding-left: 5rem;
+}
+
+.section-6 {
+  padding: 7.5rem 3.75rem;
 }
