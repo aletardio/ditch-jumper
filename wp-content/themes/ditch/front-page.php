@@ -9,7 +9,8 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-    <!-- Hero Section -->
+
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="container-hero ">
             <h1 class="heading-xl white">
@@ -38,6 +39,8 @@ get_header();
             </div>
         </div>
     </section>
+
+    <!-- SECTION 1 -->
     <section class="section-1">
         <div class="container-section-1">
             <div class="section-1-col-1"></div>
@@ -91,6 +94,8 @@ get_header();
             <div class="section-1-col-3"></div>
         </div>
     </section>
+
+    <!-- SECTION 2 -->
     <section class="section-2">
         <div class="container-macchine">
             <header class="page-header">
@@ -131,6 +136,61 @@ get_header();
                     <?php endif; ?>
                 </button>
             </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="section-1">
+        <div class="container-section-1">
+            <div class="section-1-col-1"></div>
+
+            <div class="section-1-col-2">
+            <?php
+            // 3 card configurate con ACF: icona_X_sezione_1, titolo_X_sezione_1, descrizione_X_sezione_1
+            for ( $i = 1; $i <= 3; $i++ ) :
+
+                $icon_field  = 'icona_' . $i . '_sezione_1';
+                $title_field = 'titolo_' . $i . '_sezione_1';
+                $text_field  = 'descrizione_' . $i . '_sezione_1';
+
+                $icon  = get_field( $icon_field );      // stringa (URL SVG)
+                $title = get_field( $title_field );     // testo
+                $text  = get_field( $text_field );      // textarea
+
+                if ( ! $title && ! $text && ! $icon ) {
+                continue; // se tutti vuoti, salta la card
+                }
+            ?>
+                <div class="info-section border">
+                <div class="title-section">
+                    <?php if ( $icon ) : ?>
+                    <img
+                        src="<?php echo esc_url( $icon ); ?>"
+                        alt="<?php echo esc_attr( $title ); ?>"
+                        width="48"
+                        height="48"
+                    >
+                    <?php endif; ?>
+
+                    <?php if ( $title ) : ?>
+                    <h3 class="black text-sm">
+                        <?php echo esc_html( $title ); ?>
+                    </h3>
+                    <?php endif; ?>
+                </div>
+
+                <?php if ( $text ) : ?>
+                    <div class="paragraph">
+                    <p class="black text-xs text-initial">
+                        <?php echo esc_html( $text ); ?>
+                    </p>
+                    </div>
+                <?php endif; ?>
+                </div>
+            <?php endfor; ?>
+            </div>
+
+            <div class="section-1-col-3"></div>
         </div>
     </section>
 
