@@ -43,6 +43,7 @@
   --gray: #494E56;
   --white: #fff;
   --light-gray: #E1E6E8;
+  --blue: #364E6D;
 }
 
 .black {
@@ -59,6 +60,10 @@
 
 .light-gray {
     color: var(--light-gray);
+}
+
+.blue {
+  color: var(--blue);
 }
 
 
@@ -489,6 +494,8 @@ button.btn.btn-primary.text-xxs a {
     color: #000;
 }
 
+/* SECTION 3*/
+
 .funzionamento-container {
     display: flex;
     flex-direction: row;
@@ -506,5 +513,9 @@ button.btn.btn-primary.text-xxs a {
 
 .descrizione {
     text-align: center;
+}
+
+.funzionamento-item.border:nth-child(4) {
+    border: 0;
 }
 

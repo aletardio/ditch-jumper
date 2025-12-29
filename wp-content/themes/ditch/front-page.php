@@ -146,7 +146,7 @@ get_header();
                 <div class="funzionamento-container">
                     <?php while(have_rows('funzionamento')): the_row(); ?>
                         <div class="funzionamento-item border">
-                            <div class="numero heading-lg"><?php the_sub_field('numero'); ?></div>
+                            <div class="numero heading-lg blue"><?php the_sub_field('numero'); ?></div>
                             <h3 class="titolo text-sm"><?php the_sub_field('titolo_sezione_3'); ?></h3>
                             <div class="descrizione text-xs text-initial"><?php the_sub_field('descrizione_sezione_3'); ?></div>
                         </div>
