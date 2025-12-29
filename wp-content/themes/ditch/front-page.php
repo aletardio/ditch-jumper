@@ -175,9 +175,7 @@ get_header();
             <div class="col-4">
                 <?php 
                 $immagine = get_field('immagine_1_sezione_4');
-                if($immagine) {
-                    echo wp_get_attachment_image($immagine, 'full', false, array('class' => 'img-fluid'));
-                }
+                
                 ?>
             </div>
         </div>
