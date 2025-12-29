@@ -873,6 +873,10 @@ input#privacy:checked::after {
    color: #fff;
 }
 
+.submit-button.full-width p:hover .icon-button svg path {
+  fill: #fff !important;
+}
+
 input.wpcf7-form-control.wpcf7-submit.has-spinner {
     background: transparent;
 }
