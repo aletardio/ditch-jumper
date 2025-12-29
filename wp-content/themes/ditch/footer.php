@@ -30,8 +30,8 @@
 			<div class="col-4">
 				<div class="heading-footer">
 					<p class="text-xxs black py-b">
-						<a class="text-sm black" href="">Privacy Policy</a>
-						<a class="text-sm black" href="">Cookie Policy</a>
+						<a class="black" href="">Privacy Policy</a>
+						<a class="black" href="">Cookie Policy</a>
 					</p>
 				</div>
 			</div>
