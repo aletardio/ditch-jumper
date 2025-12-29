@@ -503,6 +503,12 @@ button.btn.btn-primary.text-xxs a {
     gap: 5rem;
 }
 
+.container-section-3 .page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .funzionamento-container {
     display: flex;
     flex-direction: row;
