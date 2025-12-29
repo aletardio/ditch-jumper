@@ -64,7 +64,7 @@
 }
 
 .dark-gray {
-    color: var(--dark-gray);
+    background: var(--dark-gray);
 }
 
 .blue {
