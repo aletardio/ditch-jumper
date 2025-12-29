@@ -261,7 +261,7 @@ get_header();
                     </p>
                 </div>
                 <div class="contact-form">
-                        [contact-form-7 id="NUMERO" title="Contattaci"]
+                        [contact-form-7 id="f166446" title="Contact form"]
                 </div>
             </div>
             <div class="col-5 px-l">
