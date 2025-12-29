@@ -226,7 +226,7 @@ get_header();
                         ?>
                             <div class="faq-item">
                                 <button class="faq-question" aria-expanded="false">
-                                    <span class="faq-question-text"><?php echo esc_html($domanda); ?></span>
+                                    <span class="faq-question-text text-sm"><?php echo esc_html($domanda); ?></span>
                                     <span class="faq-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                             <path d="M8 18V10H0L0 8H8V0L10 0V8L18 8V10L10 10L10 18H8Z" fill="currentColor"/>
@@ -234,7 +234,7 @@ get_header();
                                     </span>
                                 </button>
                                 <div class="faq-answer" aria-hidden="true">
-                                    <div class="faq-answer-content">
+                                    <div class="faq-answer-content text-xs text-initial">
                                         <?php echo wp_kses_post($risposta); ?>
                                     </div>
                                 </div>
