@@ -625,14 +625,31 @@ img.img-fluid {
     transform: rotate(45deg);
 }
 
+/* Aggiungi questi stili alla fine del file */
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: max-height;
 }
 
 .faq-answer[aria-hidden="false"] {
-    max-height: 500px; /* Regola questo valore in base al contenuto */
+    max-height: 1000px;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-answer-content {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    padding: 0 0 1.5rem 0;
+    line-height: 1.6;
+}
+
+.faq-answer[aria-hidden="false"] .faq-answer-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
 }
 
 .faq-answer-content {
