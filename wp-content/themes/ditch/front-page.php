@@ -199,7 +199,10 @@ get_header();
                     <?php echo get_field('etichetta_2_sezione_4') ? esc_html(get_field('etichetta_2_sezione_4')) : 'chi siamo'; ?>
                 </h6>
                 <p class="text-sm black">
-                    <?php echo get_field('descrizione_2_sezione_4') ? esc_html(get_field('descrizione_2_sezione_4')) : 'chi siamo'; ?>
+                    <?php 
+                    $descrizione = get_field('descrizione_2_sezione_4', false, false);
+                    echo $descrizione ? $descrizione : 'testo predefinito';
+                    ?>
                 </p>
             </div>
         </div>
