@@ -215,6 +215,7 @@ get_header();
                 <?php echo get_field('titolo_sezione_5') ?: 'Domande frequenti'; ?>
             </h2>
 
+        <div class="container-section-1">
             <div class="col-2"></div>
             <div class="col-8">
                 <div class="faq-accordion">
@@ -239,27 +240,7 @@ get_header();
                 </div>
             </div>
             <div class="col-2"></div>
-            
-            <div class="faq-accordion">
-                <?php if(have_rows('faq')): ?>
-                    <?php while(have_rows('faq')): the_row(); 
-                        $domanda = get_sub_field('domanda');
-                        $risposta = get_sub_field('risposta');
-                    ?>
-                        <div class="faq-item">
-                            <button class="faq-question" aria-expanded="false">
-                                <span class="faq-question-text"><?php echo esc_html($domanda); ?></span>
-                                <span class="faq-icon">+</span>
-                            </button>
-                            <div class="faq-answer" aria-hidden="true">
-                                <div class="faq-answer-content">
-                                    <?php echo wp_kses_post($risposta); ?>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-            </div>
+        </div>
         </div>
     </section>
 
