@@ -262,7 +262,7 @@ get_header();
                 </div>
                 <div class="contact-form">
                     <?php 
-                        echo do_shortcode('[wpforms id="112"]'); 
+                        echo do_shortcode('[contact-form-7 id="f166446" title="Contact form"]'); 
                     ?>
                 </div>
             </div>
