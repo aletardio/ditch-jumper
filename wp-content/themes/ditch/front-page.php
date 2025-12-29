@@ -208,6 +208,36 @@ get_header();
         </div>
     </section>
 
+    <!-- SECTION 5 -->
+    <section class="section-5">
+        <div class="container-faq">
+            <h2 class="heading-xl black text-center">
+                <?php echo get_field('titolo_faq') ?: 'Domande frequenti'; ?>
+            </h2>
+            
+            <div class="faq-accordion">
+                <?php if(have_rows('faq')): ?>
+                    <?php while(have_rows('faq')): the_row(); 
+                        $domanda = get_sub_field('domanda');
+                        $risposta = get_sub_field('risposta');
+                    ?>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false">
+                                <span class="faq-question-text"><?php echo esc_html($domanda); ?></span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer" aria-hidden="true">
+                                <div class="faq-answer-content">
+                                    <?php echo wp_kses_post($risposta); ?>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- Contenuto della pagina home -->
