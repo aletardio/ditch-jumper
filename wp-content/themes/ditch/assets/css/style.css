@@ -562,9 +562,12 @@ img.img-fluid {
 }
 
 /* SECTION 5 */
-/* SECTION 5 - FAQ */
 .section-5 {
     padding: 4.25rem 3.75rem;
+}
+
+.col-8 {
+  width: (100%/12*8);
 }
 
 .container-faq {
