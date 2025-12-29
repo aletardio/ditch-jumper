@@ -168,7 +168,7 @@ get_header();
                     <?php echo get_field('etichetta_1_sezione_4') ? esc_html(get_field('etichetta_1_sezione_4')) : 'chi siamo'; ?>
                 </h6>
                 <p class="text-sm black">
-                    <?php echo get_field('descrizione_1_sezione_4') ? esc_html(get_field('descrizione_1_sezione_4')); ?>
+                    <?php echo get_field('descrizione_1_sezione_4') ? esc_html(get_field('descrizione_1_sezione_4')) : 'chi siamo'; ?>
                 </p>
             </div>
             <div class="col-1"></div>
