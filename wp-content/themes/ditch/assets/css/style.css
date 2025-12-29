@@ -678,3 +678,13 @@ img.img-fluid {
 .section-6 {
   padding: 7.5rem 3.75rem;
 }
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.heading p.text-s {
+    width: 80%;
+}
