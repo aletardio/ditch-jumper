@@ -919,7 +919,6 @@ span.wpcf7-form-control-wrap {
 .form-grid p {
     display: flex;
     justify-content: space-between;
-    padding-right: 2vw;
 }
 
 .required p {
