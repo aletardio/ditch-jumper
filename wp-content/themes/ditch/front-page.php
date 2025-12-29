@@ -47,7 +47,6 @@ get_header();
 
             <div class="section-1-col-2">
             <?php
-            // 3 card configurate con ACF: icona_X_sezione_1, titolo_X_sezione_1, descrizione_X_sezione_1
             for ( $i = 1; $i <= 3; $i++ ) :
 
                 $icon_field  = 'icona_' . $i . '_sezione_1';
@@ -59,7 +58,7 @@ get_header();
                 $text  = get_field( $text_field );      // textarea
 
                 if ( ! $title && ! $text && ! $icon ) {
-                continue; // se tutti vuoti, salta la card
+                continue;
                 }
             ?>
                 <div class="info-section border">
@@ -96,7 +95,7 @@ get_header();
     </section>
 
     <!-- SECTION 2 -->
-    <section class="section-2">
+    <section id="parco" class="section-2">
         <div class="container-macchine">
             <div class="page-header">
                 <h2 class="heading-xl white">
@@ -140,7 +139,7 @@ get_header();
     </section>
 
     <!-- SECTION 3 -->
-    <section class="section-1">
+    <section id="funzionamento" class="section-1">
         <div class="container-section-3">
             <div class="page-header">
                 <h2 class="heading-xl black">
@@ -158,6 +157,33 @@ get_header();
                     <?php endwhile; ?>
                 </div>
             <?php endif; ?>
+        </div>
+    </section>
+
+    <!-- SECTION 4 -->
+     <section id="chi-siamo" class="section-1">
+        <div class="container-section-4">
+            <div class="col-7">
+                <h6 class="text-xxs black">
+                    <?php echo get_field('etichetta_1_sezione_4') ? esc_html(get_field('etichetta_1_sezione_4')) : 'chi siamo'; ?>
+                </h6>
+                <p class="text-sm black">
+                    <?php echo get_field('descrizione_1_sezione_4') ? esc_html(get_field('descrizione_1_sezione_4')); ?>
+                </p>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-4">
+
+            </div>
+        </div>
+        <div class="container-section-4">
+            <div class="col-4">
+                
+            </div>
+            <div class="col-1"></div>
+            <div class="col-7">
+                
+            </div>
         </div>
     </section>
 
