@@ -689,12 +689,17 @@ img.img-fluid {
     width: 80%;
 }
 
+.contact-form {
+    padding-top: 2.5rem;
+}
+
 .form-grid {
-  display:grid;
+  display: grid;
   grid-template-columns: auto;
   column-gap: 24px;
   row-gap: 20px;
   align-items: center;
+  padding-right: 5rem;
 }
 
 @media screen and (max-width:767px) {
@@ -706,18 +711,19 @@ img.img-fluid {
         display: none;
     }
     
-        span.wpcf7-form-control-wrap {
-        width: 100% !important;
+    span.wpcf7-form-control-wrap {
+      width: 100% !important;
     }
 }
 
 .form-grid label{
-    font-size: clamp(1.625rem, 0rem + 1.8055vw, 2.88888rem);
+    font-size: clamp(1.25rem, 0rem + 1.3889vw, 2.22225rem);
     font-family: var(--font-alt);
     font-style: normal;
     font-weight: 700;
     line-height: 115.385%;
     letter-spacing: 0.05775rem;
+    color: #fff;
 }
 
 .form-grid input[type="text"],
@@ -733,7 +739,7 @@ img.img-fluid {
     outline: none;
     padding-bottom: .6rem !important;
     font-family: var(--font-alt);
-    font-size: clamp(1.25rem, 0rem + 1.3889vw, 2.22225rem);
+    font-size: clamp(1rem, 0rem + 1.1111vw, 1.77775rem);
     font-weight: 400;
     line-height: 100%;
 }
@@ -846,7 +852,14 @@ input#privacy:checked::after {
 }
 
 .submit-button.full-width p {
-    padding: 0;
+    background: #fff;
+    width: fit-content;
+    padding: 1.88rem 3.12rem;
+    border-radius: 50px;
+}
+
+input.wpcf7-form-control.wpcf7-submit.has-spinner {
+    background: transparent;
 }
 
 .submit-button span:nth-child(1) {
@@ -861,7 +874,7 @@ input#privacy:checked::after {
 }
 
 span.icon-button {
-    margin-top: -1.5rem;
+    margin-top: -1rem;
 }
 
 [type=button]:focus, 
@@ -875,31 +888,6 @@ button:hover {
 
 input.wpcf7-form-control.wpcf7-submit.has-spinner {
     padding: 0;
-}
-
-.submit-button.full-width span.icon-button svg path {
-    transition: 0.4s;
-}
-
-.submit-button.full-width:hover span.icon-button svg path {
-    stroke: #BA0C2F !important;
-}
-
-.submit-button.full-width span.icon-button svg path:first-of-type {
-    transition: transform 0.4s ease;
-    transform-origin: left center;
-}
-
-.submit-button.full-width span.icon-button svg path:last-of-type {
-    transition: transform 0.4s ease;
-}
-
-.submit-button.full-width:hover span.icon-button svg path:first-of-type {
-  transform: scaleX(0.45);
-}
-
-.submit-button.full-width:hover span.icon-button svg path:last-of-type {
-  transform: translateX(-21px);
 }
 
 .form-grid input[type="submit"]{
@@ -926,6 +914,7 @@ span.wpcf7-form-control-wrap {
     font-size: var(--e-global-typography-bfbe328-font-size);
     font-weight: var(--e-global-typography-bfbe328-font-weight);
     line-height: var(--e-global-typography-bfbe328-line-height);
+    color: #fff;
 }
 
 .wpcf7-not-valid-tip {
