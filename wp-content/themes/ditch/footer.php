@@ -29,10 +29,10 @@
 			</div>
 			<div class="col-4">
 				<div class="heading-footer">
-					<p class="text-xxs black py-b">
+					<p class="text-xxs black">
 						<a class="black text-initial" href="">Privacy Policy</a>
 					</p>
-					<div class="text-xxs black py-b">
+					<div class="text-xxs black">
 						<a class="black text-initial" href="">Cookie Policy</a>
 					</div>
 				</div>
