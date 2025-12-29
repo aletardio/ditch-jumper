@@ -488,3 +488,38 @@ button.btn.btn-primary.text-xxs a {
     text-decoration: none;
     color: #000;
 }
+
+.funzionamento-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.funzionamento-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.numero {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #f0f0f0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.titolo {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.descrizione {
+    color: #666;
+    line-height: 1.5;
+}

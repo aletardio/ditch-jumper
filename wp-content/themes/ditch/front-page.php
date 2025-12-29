@@ -142,55 +142,17 @@ get_header();
     <!-- SECTION 3 -->
     <section class="section-1">
         <div class="container-section-1">
-            <div class="section-1-col-1"></div>
-
-            <div class="section-1-col-2">
-            <?php
-            // 3 card configurate con ACF: icona_X_sezione_1, titolo_X_sezione_1, descrizione_X_sezione_1
-            for ( $i = 1; $i <= 3; $i++ ) :
-
-                $icon_field  = 'icona_' . $i . '_sezione_1';
-                $title_field = 'titolo_' . $i . '_sezione_1';
-                $text_field  = 'descrizione_' . $i . '_sezione_1';
-
-                $icon  = get_field( $icon_field );      // stringa (URL SVG)
-                $title = get_field( $title_field );     // testo
-                $text  = get_field( $text_field );      // textarea
-
-                if ( ! $title && ! $text && ! $icon ) {
-                continue; // se tutti vuoti, salta la card
-                }
-            ?>
-                <div class="info-section border">
-                <div class="title-section">
-                    <?php if ( $icon ) : ?>
-                    <img
-                        src="<?php echo esc_url( $icon ); ?>"
-                        alt="<?php echo esc_attr( $title ); ?>"
-                        width="48"
-                        height="48"
-                    >
-                    <?php endif; ?>
-
-                    <?php if ( $title ) : ?>
-                    <h3 class="black text-sm">
-                        <?php echo esc_html( $title ); ?>
-                    </h3>
-                    <?php endif; ?>
+            <?php if(have_rows('funzionamento')): ?>
+                <div class="funzionamento-container">
+                    <?php while(have_rows('funzionamento')): the_row(); ?>
+                        <div class="funzionamento-item">
+                            <div class="numero"><?php the_sub_field('numero'); ?></div>
+                            <h3 class="titolo"><?php the_sub_field('titolo_sezione_3'); ?></h3>
+                            <div class="descrizione"><?php the_sub_field('descrizione_sezione_3'); ?></div>
+                        </div>
+                    <?php endwhile; ?>
                 </div>
-
-                <?php if ( $text ) : ?>
-                    <div class="paragraph">
-                    <p class="black text-xs text-initial">
-                        <?php echo esc_html( $text ); ?>
-                    </p>
-                    </div>
-                <?php endif; ?>
-                </div>
-            <?php endfor; ?>
-            </div>
-
-            <div class="section-1-col-3"></div>
+            <?php endif; ?>
         </div>
     </section>
 
