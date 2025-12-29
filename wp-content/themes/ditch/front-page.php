@@ -145,10 +145,10 @@ get_header();
             <?php if(have_rows('funzionamento')): ?>
                 <div class="funzionamento-container">
                     <?php while(have_rows('funzionamento')): the_row(); ?>
-                        <div class="funzionamento-item">
-                            <div class="numero"><?php the_sub_field('numero'); ?></div>
-                            <h3 class="titolo"><?php the_sub_field('titolo_sezione_3'); ?></h3>
-                            <div class="descrizione"><?php the_sub_field('descrizione_sezione_3'); ?></div>
+                        <div class="funzionamento-item border">
+                            <div class="numero heading-lg"><?php the_sub_field('numero'); ?></div>
+                            <h3 class="titolo text-sm"><?php the_sub_field('titolo_sezione_3'); ?></h3>
+                            <div class="descrizione text-xs text-initial"><?php the_sub_field('descrizione_sezione_3'); ?></div>
                         </div>
                     <?php endwhile; ?>
                 </div>
