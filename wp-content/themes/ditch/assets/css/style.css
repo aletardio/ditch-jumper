@@ -671,6 +671,12 @@ img.img-fluid {
 }
 
 /* SECTION 6 */
+.col-7 {
+  width: calc(100%/12*7);
+}
+.col-5 {
+  width: calc(100%/12*5);
+}
 .px-l {
   padding-left: 5rem;
 }
@@ -856,6 +862,15 @@ input#privacy:checked::after {
     width: fit-content;
     padding: 1.88rem 3.12rem;
     border-radius: 50px;
+    transition: 0.4s;
+}
+
+.submit-button.full-width p:hover {
+    background: #000;
+}
+
+.submit-button.full-width p:hover input.wpcf7-form-control.wpcf7-submit.has-spinner {
+   color: #fff;
 }
 
 input.wpcf7-form-control.wpcf7-submit.has-spinner {
