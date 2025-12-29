@@ -583,6 +583,25 @@ img.img-fluid {
     border-bottom: 1px solid #E1E6E8;
 }
 
+.faq-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 1rem;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    color: #333333; /* Colore dell'icona */
+}
+
+.faq-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon {
+    transform: rotate(45deg);
+}
+
 .faq-question {
     width: 100%;
     text-align: left;
