@@ -689,3 +689,280 @@ img.img-fluid {
     width: 80%;
 }
 
+.form-grid {
+  display:grid;
+  grid-template-columns: auto;
+  column-gap: 24px;
+  row-gap: 20px;
+  align-items: center;
+}
+
+@media screen and (max-width:767px) {
+    .form-grid p {
+        display: block !important;
+    }
+    
+    .form-grid br {
+        display: none;
+    }
+    
+        span.wpcf7-form-control-wrap {
+        width: 100% !important;
+    }
+}
+
+.form-grid label{
+    font-size: clamp(1.625rem, 0rem + 1.8055vw, 2.88888rem);
+    font-family: var(--font-alt);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115.385%;
+    letter-spacing: 0.05775rem;
+}
+
+.form-grid input[type="text"],
+.form-grid input[type="email"],
+.form-grid input[type="tel"],
+.form-grid textarea{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #A9A9A9;
+    border-radius: 0;
+    padding: 0 !important;
+    background: transparent;
+    outline: none;
+    padding-bottom: .6rem !important;
+    font-family: var(--font-alt);
+    font-size: clamp(1.25rem, 0rem + 1.3889vw, 2.22225rem);
+    font-weight: 400;
+    line-height: 100%;
+}
+.form-grid input[type="text"]::placeholder,
+.form-grid input[type="email"]::placeholder,
+.form-grid input[type="tel"]::placeholder,
+.form-grid textarea::placeholder {
+  color: #A9A9A9;
+  opacity: 1;
+}
+
+.form-grid input[type="text"]:focus,
+.form-grid input[type="email"]:focus,
+.form-grid input[type="tel"]:focus,
+.form-grid textarea:focus {
+  outline: none;
+  border: 2px solid #0073e6;
+  border-radius: 4px;
+}
+
+.form-grid label {
+  transition: color 0.3s;
+}
+
+.form-grid input:focus + label,
+.form-grid textarea:focus + label {
+  color: #0073e6;
+}
+
+.form-grid select:focus,
+.form-grid select:focus-visible,
+.form-grid select:active {
+  outline: none !important;
+  border: inherit !important;
+  box-shadow: none !important;
+}
+.form-grid input:focus,
+.form-grid textarea:focus{
+  border-bottom-color: #A9A9A9;
+}
+.form-grid textarea {
+    height: 32px;
+    min-height: 0;
+    resize: none;
+    overflow: hidden;
+}
+.privacy-accept {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.privacy-accept label {
+    font-family: var(--e-global-typography-bfbe328-font-family), Sans-serif;
+    font-size: var(--e-global-typography-bfbe328-font-size);
+    font-weight: var(--e-global-typography-bfbe328-font-weight);
+    line-height: var(--e-global-typography-bfbe328-line-height);
+}
+
+input#privacy {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    margin-right: 10px;
+    position: relative;
+    border: 1px solid #A9A9A9
+}
+
+input#privacy:checked {
+    background-color: #A9A9A9;
+}
+
+input#privacy:checked::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.privacy-accept.full-width a {
+    color: #A9A9A9;
+    transition: 0.4s;
+}
+
+.privacy-accept.full-width a:hover {
+    color: #BA0C2F;
+}
+
+.submit-button.full-width {
+    background: transparent;
+    padding-top: 2rem !important;
+}
+
+.submit-button.full-width input {
+    font-family: var(--e-global-typography-bfbe328-font-family), Sans-serif;
+    font-size: var(--e-global-typography-bfbe328-font-size);
+    font-weight: var(--e-global-typography-bfbe328-font-weight);
+    line-height: var(--e-global-typography-bfbe328-line-height);
+    text-transform: uppercase;
+    color: #212121;
+    border: 0;
+}
+
+.submit-button.full-width p {
+    padding: 0;
+}
+
+.submit-button span:nth-child(1) {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-right: 8px;
+}
+
+.submit-button.full-width p {
+    justify-content: start;
+}
+
+span.icon-button {
+    margin-top: -1.5rem;
+}
+
+[type=button]:focus, 
+[type=button]:hover, 
+[type=submit]:focus, 
+[type=submit]:hover, 
+button:focus, 
+button:hover {
+    background: transparent !important;
+}
+
+input.wpcf7-form-control.wpcf7-submit.has-spinner {
+    padding: 0;
+}
+
+.submit-button.full-width span.icon-button svg path {
+    transition: 0.4s;
+}
+
+.submit-button.full-width:hover span.icon-button svg path {
+    stroke: #BA0C2F !important;
+}
+
+.submit-button.full-width span.icon-button svg path:first-of-type {
+    transition: transform 0.4s ease;
+    transform-origin: left center;
+}
+
+.submit-button.full-width span.icon-button svg path:last-of-type {
+    transition: transform 0.4s ease;
+}
+
+.submit-button.full-width:hover span.icon-button svg path:first-of-type {
+  transform: scaleX(0.45);
+}
+
+.submit-button.full-width:hover span.icon-button svg path:last-of-type {
+  transform: translateX(-21px);
+}
+
+.form-grid input[type="submit"]{
+  cursor: pointer;
+}
+
+span.wpcf7-form-control-wrap {
+    width: 80%;
+}
+
+@media screen and (max-width:1728px) {
+    span.wpcf7-form-control-wrap {
+        width: 70%;
+    }
+}
+
+.form-grid p {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2vw;
+}
+
+.required p {
+    font-family: var(--e-global-typography-bfbe328-font-family), Sans-serif;
+    font-size: var(--e-global-typography-bfbe328-font-size);
+    font-weight: var(--e-global-typography-bfbe328-font-weight);
+    line-height: var(--e-global-typography-bfbe328-line-height);
+}
+
+.wpcf7-not-valid-tip {
+    color: #ba0b2f;
+    font-size: 1em;
+    font-weight: normal;
+    display: block;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, 
+.wpcf7 form.unaccepted .wpcf7-response-output, 
+.wpcf7 form.payment-required .wpcf7-response-output {
+    border: 0;
+    padding: 0;
+    color: #ba0b2f;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 1em 0;
+    padding: 0 !important;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border: 0 !important;
+} 
+
+/* responsive: una colonna su mobile */
+@media (max-width:640px){
+  .form-grid{
+    grid-template-columns: 1fr;
+  }
+  .form-grid label{
+    margin-bottom: 4px;
+  }
+}
+
+.wpcf7-spinner {
+    display: none !important;
+}
