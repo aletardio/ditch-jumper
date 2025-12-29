@@ -928,6 +928,10 @@ span.wpcf7-form-control-wrap {
     justify-content: space-between;
 }
 
+.privacy-accept label {
+    padding-top: 2px;
+}
+
 .required p {
     font-family: var(--e-global-typography-bfbe328-font-family), Sans-serif;
     font-size: var(--e-global-typography-bfbe328-font-size);
@@ -972,4 +976,17 @@ span.wpcf7-form-control-wrap {
 
 .wpcf7-spinner {
     display: none !important;
+}
+
+/* FOOTER */
+footer {
+  padding: 3.75rem 3.75rem 3.75rem 0;
+  background-color: #CED2D4;
+}
+footer .container {
+  display: flex;
+  flex-direction: row;
+}
+.py-b {
+  padding-bottom: 1.4rem;
 }

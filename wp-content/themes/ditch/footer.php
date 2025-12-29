@@ -12,19 +12,21 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ditch' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'ditch' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ditch' ), 'ditch', '<a href="http://underscores.me/">Alessandro</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="container">
+			<div class="col-4">
+				<div class="heading">
+					<p class="text-xxs black py-b">CONTATTACI</p>
+					<a class="text-sm black" href="tel:+3933812345678">338 12345678</a>
+					<a class="text-sm black" href="mailto:info@ditchjumper.it">info@ditchjumper.it</a>
+				</div>
+			</div>
+			<div class="col-4">
+				
+			</div>
+			<div class="col-4">
+				
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
