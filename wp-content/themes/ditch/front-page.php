@@ -142,6 +142,11 @@ get_header();
     <!-- SECTION 3 -->
     <section class="section-1">
         <div class="container-section-1">
+            <div class="page-header">
+                <h2 class="heading-xl white">
+                    <?php echo get_field('titolo_sezione_3') ? esc_html(get_field('titolo_sezione_3')) : 'Come funziona'; ?>
+                </h2>
+            </div>
             <?php if(have_rows('funzionamento')): ?>
                 <div class="funzionamento-container">
                     <?php while(have_rows('funzionamento')): the_row(); ?>
