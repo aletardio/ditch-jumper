@@ -162,7 +162,7 @@ get_header();
 
     <!-- SECTION 4 -->
      <section id="chi-siamo" class="section-4">
-        <div class="container-section-4">
+        <div class="container-section-4 border-gray">
             <div class="col-7">
                 <h6 class="text-xxs black">
                     <?php echo get_field('etichetta_1_sezione_4') ? esc_html(get_field('etichetta_1_sezione_4')) : 'chi siamo'; ?>
@@ -183,11 +183,21 @@ get_header();
         </div>
         <div class="container-section-4">
             <div class="col-4">
-                
+                <?php 
+                $immagine = get_field('immagine_2_sezione_4');
+                if($immagine) {
+                    echo wp_get_attachment_image($immagine, 'full', false, array('class' => 'img-fluid'));
+                }
+                ?>
             </div>
             <div class="col-1"></div>
             <div class="col-7">
-                
+                <h6 class="text-xxs black">
+                    <?php echo get_field('etichetta_2_sezione_4') ? esc_html(get_field('etichetta_2_sezione_4')) : 'chi siamo'; ?>
+                </h6>
+                <p class="text-sm black">
+                    <?php echo get_field('descrizione_2_sezione_4') ? esc_html(get_field('descrizione_2_sezione_4')) : 'chi siamo'; ?>
+                </p>
             </div>
         </div>
     </section>

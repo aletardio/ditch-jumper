@@ -534,7 +534,7 @@ button.btn.btn-primary.text-xxs a {
 
 /* SECTION 4*/
 .section-4 {
-  padding: 7.5rem 0;
+  padding: 4.25rem 0;
   background-color: #CED2D4;
 }
 
@@ -549,5 +549,14 @@ button.btn.btn-primary.text-xxs a {
 .container-section-4 {
     display: flex;
     flex-direction: row;
-    padding: 0 3.75rem;
+    padding: 3.12rem 3.75rem
+}
+
+.border-gray {
+  border-bottom: 1px solid #898989;
+}
+
+img.img-fluid {
+    width: 100%;
+    height: fit-content;
 }
