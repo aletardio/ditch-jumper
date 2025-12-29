@@ -14,17 +14,26 @@
 	<footer id="colophon" class="site-footer">
 		<div class="container">
 			<div class="col-4">
-				<div class="heading">
+				<div class="heading-footer">
 					<p class="text-xxs black py-b">CONTATTACI</p>
 					<a class="text-sm black" href="tel:+3933812345678">338 12345678</a>
 					<a class="text-sm black" href="mailto:info@ditchjumper.it">info@ditchjumper.it</a>
 				</div>
 			</div>
 			<div class="col-4">
-				
+				<div class="heading-footer">
+					<p class="text-xxs black py-b">DOVE TROVARCI</p>
+					<p class="text-sm black">Ditch Jumper SRL Viale Bassani 87/G 36016, Thiene (VI)</p>
+					<p class="text-sm black">P.IVA / C.F.: 04229630241</p>
+				</div>
 			</div>
 			<div class="col-4">
-				
+				<div class="heading-footer">
+					<p class="text-xxs black py-b">
+						<a class="text-sm black" href="">Privacy Policy</a>
+						<a class="text-sm black" href="">Cookie Policy</a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
