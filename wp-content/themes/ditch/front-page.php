@@ -248,6 +248,33 @@ get_header();
         </div>
     </section>
 
+    <!-- SECTION 6 -->
+    <section id="contatti" class="section-6">
+        <div class="container-section-1 ">
+            <div class="col-7">
+                <div class="heading">
+                    <h2 class="heading-xl white">
+                        <?php echo get_field('titolo_sezione_6') ?: 'Hai domande o vuoi vedere un’auto dal vivo? scrivici.'; ?>
+                    </h2>
+                    <p class="text-s white">
+                        <?php echo get_field('descrizione_sezione_6') ? esc_html(get_field('descrizione_sezione_6')) : 'contatti'; ?>
+                    </p>
+                </div>
+                <div class="contact-form">
+
+                </div>
+            </div>
+            <div class="col-5 px-l">
+                <?php 
+                $immagine = get_field('immagine_sezione_6');
+                if($immagine) {
+                    echo wp_get_attachment_image($immagine, 'full', false, array('class' => 'img-fluid'));
+                }
+                ?>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- Contenuto della pagina home -->

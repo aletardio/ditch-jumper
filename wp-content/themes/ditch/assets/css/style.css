@@ -43,6 +43,7 @@
   --gray: #494E56;
   --white: #fff;
   --light-gray: #E1E6E8;
+  --dark-gray: #252B33;
   --blue: #364E6D;
 }
 
@@ -60,6 +61,10 @@
 
 .light-gray {
     color: var(--light-gray);
+}
+
+.dark-gray {
+    color: var(--dark-gray);
 }
 
 .blue {
@@ -663,4 +668,9 @@ img.img-fluid {
     transition: transform 0.3s ease;
     margin-left: 1rem;
     flex-shrink: 0;
+}
+
+/* SECTION 5 */
+.px-l {
+  padding-left: 5rem;
 }
