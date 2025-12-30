@@ -234,12 +234,12 @@ body {
     }
 
     h1.heading-xl.white {
-      width: 100%;
-      padding-bottom: 1.5rem;
+      width: 100% !important;
+      padding-bottom: 1.5rem !important;
   }
 
     .heading-xl {
-      font-size: 2.5rem;
+      font-size: 2.5rem !important;
     }
 }
 
