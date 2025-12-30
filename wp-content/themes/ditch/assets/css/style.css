@@ -211,7 +211,7 @@ body {
     z-index: 9999;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    padding: 2rem;
+    padding: 1rem;
     box-sizing: border-box;
   }
   
@@ -229,7 +229,6 @@ body {
     font-size: 2rem;
     line-height: 1;
     cursor: pointer;
-    padding: 0.5rem;
     z-index: 10000;
   }
   
@@ -253,7 +252,6 @@ body {
   
   .main-navigation__list a {
     display: block;
-    padding: 1rem;
     font-size: 1.5rem;
     color: #000;
     text-decoration: none;
@@ -281,6 +279,17 @@ body {
     display: block;
     opacity: 1;
   }
+
+  /* MENU */
+  .menu-item-type-custom a {
+    color: #000000 !important;
+    text-decoration: none !important;
+  }
+
+  ul#primary-menu {
+    gap: 0.5rem !important;
+  }
+
 
   /* HERO */
   .hero {
