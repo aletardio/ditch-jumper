@@ -994,3 +994,11 @@ footer .container {
 .py-b {
   padding-bottom: 1.4rem;
 }
+.align-end {
+  align-items: end;
+}
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
