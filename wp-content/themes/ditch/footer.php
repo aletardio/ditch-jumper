@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="container">
+		<div class="container space">
 			<div class="col-4">
 				<div class="heading-footer">
 					<p class="text-xxs black py-b">CONTATTACI</p>
@@ -39,7 +39,7 @@
 			</div>
 		</div>
 		<div class="container">
-			<img
+			<img class="logo-footer"
 				src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/ditch-jumper-footer.svg' ); ?>"
 				alt="Ditch Jumper"
 				>

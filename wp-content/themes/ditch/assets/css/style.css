@@ -1001,3 +1001,9 @@ footer .container {
   flex-direction: column;
   gap: 7rem;
 }
+.space {
+  padding: 3.75rem 3.75rem 0 3.75rem;
+}
+.logo-footer {
+  width: 100%;
+}
