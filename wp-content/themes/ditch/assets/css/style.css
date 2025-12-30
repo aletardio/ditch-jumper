@@ -141,6 +141,76 @@ body {
     text-transform: uppercase;
 }
 
+/* Menu Mobile */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
+
+.mobile-menu-toggle .hamburger-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 900;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Stili per il menu su mobile */
+@media (max-width: 1023px) {
+    .mobile-menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+    
+    .site-header__col--nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        background-color: white;
+        padding: 80px 20px 40px;
+        transition: right 0.3s ease;
+        z-index: 950;
+        overflow-y: auto;
+    }
+    
+    .site-header__col--nav.is-active {
+        right: 0;
+    }
+    
+    .mobile-menu-overlay.is-active {
+        display: block;
+        opacity: 1;
+    }
+    
+    .main-navigation__list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .site-header__col--cta {
+        display: none;
+    }
+}
+
 /* HEADER */
 .site-header__inner {
     padding: 1.85rem 3.75rem;

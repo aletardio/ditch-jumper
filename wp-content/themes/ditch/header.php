@@ -34,6 +34,11 @@
 				</a>
 			</div>
 
+			<!-- Hamburger Button per Mobile -->
+			<button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-menu">
+				<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/hamburger.svg' ); ?>" alt="Menu" class="hamburger-icon">
+			</button>
+
 			<div class="col-6 site-header__col site-header__col--nav">
 				<nav id="site-navigation"
 					class="main-navigation"
@@ -53,6 +58,9 @@
 			<div class="col-2 site-header__col site-header__col--cta">
 				<button class="btn btn-primary text-xxs">Contattaci</button>
 			</div>
+
+			<!-- Overlay per il menu mobile -->
+			<div class="mobile-menu-overlay"></div>
 		</div>
 	</header>
 
