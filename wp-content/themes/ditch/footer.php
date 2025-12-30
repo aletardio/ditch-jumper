@@ -39,12 +39,10 @@
 			</div>
 		</div>
 		<div class="container">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-header__logo">
-				<img
+			<img
 				src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/ditch-jumper-footer.svg' ); ?>"
 				alt="Ditch Jumper"
 				>
-			</a>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
