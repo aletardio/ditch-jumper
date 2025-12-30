@@ -27,17 +27,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Chiudi il menu quando si clicca su un link del menu
-        const navLinks = mobileNav.querySelectorAll('a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenuToggle.setAttribute('aria-expanded', 'false');
-                mobileNav.classList.remove('is-active');
-                mobileOverlay.classList.remove('is-active');
-                html.classList.remove('menu-open');
-            });
-        });
     }
-    
+
+    // Apri menu al click sull'hamburger
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', () => toggleMenu(true));
+    }
+
+    // Chiudi menu al click sulla X
+    if (mobileMenuClose) {
+        mobileMenuClose.addEventListener('click', () => toggleMenu(false));
+    }
+
+    // Chiudi menu al click sull'overlay
+    if (mobileOverlay) {
+        mobileOverlay.addEventListener('click', () => toggleMenu(false));
+    }
+
+    // Chiudi menu al click su un link del menu
+    const navLinks = document.querySelectorAll('.main-navigation__list a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => toggleMenu(false));
+    });
+
     // Smooth scroll per i link di ancoraggio
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
