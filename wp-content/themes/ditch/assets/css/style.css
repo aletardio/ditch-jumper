@@ -178,6 +178,11 @@ body {
       padding: 1rem !important;
     }
 
+    .col-4.site-header__col.site-header__col--logo,
+    .col-6.site-header__col.site-header__col--nav {
+      width: 50% !important;
+    }
+
     .col-2.site-header__col.site-header__col--cta {
       display: none !important;
     }
