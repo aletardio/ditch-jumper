@@ -212,7 +212,7 @@ body {
     z-index: 9999;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    padding: 2rem 1rem 1rem;
+    padding: 1.25rem 1rem;
     box-sizing: border-box;
     overflow-y: auto;
   }
@@ -221,11 +221,10 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
 
   .mobile-menu-header .site-header__logo {
