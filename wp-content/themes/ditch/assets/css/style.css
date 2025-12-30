@@ -171,6 +171,10 @@ body {
     transition: opacity 0.3s ease;
 }
 
+mobile-menu-header {
+  display: none;
+}
+
 /* Stili per il menu su mobile */
 @media (max-width: 1023px) {
   .site-header__inner {
