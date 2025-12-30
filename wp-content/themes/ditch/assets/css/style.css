@@ -179,11 +179,11 @@ body {
     }
 
     .col-4.site-header__col.site-header__col--logo,
-    .col-6.site-header__col.site-header__col--nav {
+    .col-2.site-header__col.site-header__col--cta {
       width: 50% !important;
     }
 
-    .col-2.site-header__col.site-header__col--cta {
+    .col-2.site-header__col.site-header__col--cta button.btn.btn-primary.text-xxs {
       display: none !important;
     }
 
