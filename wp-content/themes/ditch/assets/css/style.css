@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Regola questo valore in base all'altezza del tuo header */
 }
 
 /* Import Google Fonts */
