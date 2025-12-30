@@ -258,7 +258,8 @@ body {
       padding: 0 1rem !important;
     }
 
-    .info-section.border {
+    .info-section.border,
+    .funzionamento-item.border {
       border: 0 !important;
   }
 
@@ -273,6 +274,16 @@ body {
 
     .hero-buttons.white button.btn.btn-primary.text-xxs {
       margin-top: 2rem !important;
+    }
+
+    /* SECTION 3 */
+    .container-section-3 {
+      gap: 3rem !important;
+    }
+
+    .funzionamento-container {
+      flex-direction: column !important;
+      padding: 0 1rem !important;
     }
 }
 
