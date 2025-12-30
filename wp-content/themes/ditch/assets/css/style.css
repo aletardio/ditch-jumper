@@ -196,7 +196,7 @@ button.btn.btn-primary.text-xxs {
 }
 
 button.btn.btn-primary.text-xxs:hover {
-    background: #000;
+    background: #000 !important;
     color: #fff;
 }
 
