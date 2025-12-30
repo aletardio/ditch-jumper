@@ -175,11 +175,11 @@ body {
 /* Stili per il menu su mobile */
 @media (max-width: 1023px) {
     .site-header__inner {
-      padding: 1rem;
+      padding: 1rem !important;
     }
 
     .col-2.site-header__col.site-header__col--cta {
-      display: none;
+      display: none !important;
     }
 
     .mobile-menu-toggle {
