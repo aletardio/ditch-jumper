@@ -355,7 +355,7 @@ body {
   .form-grid input[type="email"], 
   .form-grid input[type="tel"], 
   .form-grid textarea {
-    padding: .6rem 0;
+    padding: .6rem 0 !important;
   }
 
   .container-section-1 .col-5 {
