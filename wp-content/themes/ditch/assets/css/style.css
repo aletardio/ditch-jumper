@@ -171,7 +171,7 @@ body {
     transition: opacity 0.3s ease;
 }
 
-mobile-menu-header {
+.mobile-menu-header {
   display: none;
 }
 
