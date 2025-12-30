@@ -284,6 +284,7 @@ body {
     .funzionamento-container {
       flex-direction: column !important;
       padding: 0 1rem !important;
+      gap: 2rem;
     }
 }
 
