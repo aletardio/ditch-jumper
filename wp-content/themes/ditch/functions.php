@@ -206,6 +206,18 @@ function enqueue_faq_script() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_faq_script');
 
+function ditch_enqueue_scripts() {
+    // Main JavaScript
+    wp_enqueue_script(
+        'ditch-main',
+        get_template_directory_uri() . '/assets/js/main.js',
+        array(), // Nessuna dipendenza
+        filemtime(get_template_directory() . '/assets/js/main.js'),
+        true // Carica nel footer
+    );
+}
+add_action('wp_enqueue_scripts', 'ditch_enqueue_scripts');
+
 /**
  * Implement the Custom Header feature.
  */
