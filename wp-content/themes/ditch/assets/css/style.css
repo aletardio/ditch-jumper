@@ -156,6 +156,7 @@ body {
     width: 24px;
     height: 24px;
     display: block;
+    filter: invert(1);
 }
 
 .mobile-menu-overlay {
@@ -173,6 +174,14 @@ body {
 
 /* Stili per il menu su mobile */
 @media (max-width: 1023px) {
+    .site-header__inner {
+      padding: 1rem;
+    }
+
+    .col-2.site-header__col.site-header__col--cta {
+      display: none;
+    }
+
     .mobile-menu-toggle {
         display: block;
         margin-left: auto;
