@@ -224,6 +224,7 @@ body {
         display: none;
     }
 
+    /* HERO */
     .hero {
       min-height: 85vh !important;
     }
@@ -240,6 +241,38 @@ body {
 
     .heading-xl {
       font-size: 2.5rem !important;
+    }
+
+    /* SECTION 1 */
+    .section-1 {
+      padding: 4rem 0 !important;
+    }
+
+    .section-1-col-2 {
+      width: 100% !important;
+      flex-direction: column !important;
+      gap: 2.5rem;
+    }
+
+    .section-1-col-2 .info-section, .title-section {
+      padding: 0 1rem !important;
+    }
+
+    .info-section.border {
+      border: 0 !important;
+  }
+
+    /* SECTION 2 */
+    .container-macchine {
+      padding: 0 1rem !important;
+    }
+
+    .hero-buttons {
+      gap: 1.5rem !important;
+    }
+
+    .hero-buttons.white button.btn.btn-primary.text-xxs {
+      margin-top: 2rem !important;
     }
 }
 
