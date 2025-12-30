@@ -3,48 +3,56 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Gestione del menu mobile
+    // Elementi del menu mobile
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenuClose = document.querySelector('.mobile-menu-close');
     const mobileNav = document.querySelector('.site-header__col--nav');
     const mobileOverlay = document.querySelector('.mobile-menu-overlay');
     const html = document.documentElement;
-    
-    if (mobileMenuToggle && mobileNav) {
-        mobileMenuToggle.addEventListener('click', function() {
-            const isExpanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !isExpanded);
-            mobileNav.classList.toggle('is-active');
-            mobileOverlay.classList.toggle('is-active');
-            html.classList.toggle('menu-open', !isExpanded);
-        });
+
+    // Funzione per gestire lo stato del menu
+    function toggleMenu(show) {
+        const isExpanded = show ?? !mobileNav.classList.contains('is-active');
         
-        // Chiudi il menu quando si clicca sull'overlay
-        mobileOverlay.addEventListener('click', function() {
-            mobileMenuToggle.setAttribute('aria-expanded', 'false');
-            mobileNav.classList.remove('is-active');
-            this.classList.remove('is-active');
-            html.classList.remove('menu-open');
-        });
+        if (mobileMenuToggle) {
+            mobileMenuToggle.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+        }
         
-        // Chiudi il menu quando si clicca su un link del menu
+        mobileNav.classList.toggle('is-active', isExpanded);
+        mobileOverlay.classList.toggle('is-active', isExpanded);
+        html.classList.toggle('menu-open', isExpanded);
+        
+        // Blocca lo scroll quando il menu è aperto
+        document.body.style.overflow = isExpanded ? 'hidden' : '';
     }
 
-    // Apri menu al click sull'hamburger
+    // Apri/chiudi menu dall'hamburger
     if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', () => toggleMenu(true));
+        mobileMenuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMenu();
+        });
     }
 
-    // Chiudi menu al click sulla X
+    // Chiudi menu dal pulsante di chiusa
     if (mobileMenuClose) {
-        mobileMenuClose.addEventListener('click', () => toggleMenu(false));
+        mobileMenuClose.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMenu(false);
+        });
     }
 
-    // Chiudi menu al click sull'overlay
+    // Chiudi menu dall'overlay
     if (mobileOverlay) {
-        mobileOverlay.addEventListener('click', () => toggleMenu(false));
+        mobileOverlay.addEventListener('click', (e) => {
+            // Chiudi solo se si clicca direttamente sull'overlay, non sui suoi figli
+            if (e.target === mobileOverlay) {
+                toggleMenu(false);
+            }
+        });
     }
 
-    // Chiudi menu al click su un link del menu
+    // Chiudi menu al click su un link
     const navLinks = document.querySelectorAll('.main-navigation__list a');
     navLinks.forEach(link => {
         link.addEventListener('click', () => toggleMenu(false));
