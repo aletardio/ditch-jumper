@@ -208,23 +208,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     z-index: 9999;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    padding: 1.25rem 1rem;
+    padding: 1.25rem 0;
     box-sizing: border-box;
     overflow-y: auto;
   }
 
   .mobile-menu-header {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 0 1.5rem;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5rem;
   }
 
   .mobile-menu-header .site-header__logo {
@@ -260,12 +259,12 @@ body {
   .main-navigation__list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
-    padding: 0;
+    margin: 0;
+    padding: 0 1.5rem;
     list-style: none;
   }
   
