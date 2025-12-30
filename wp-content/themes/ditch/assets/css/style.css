@@ -360,6 +360,24 @@ body {
 
   .container-section-1 .col-5 {
     padding-top: 3rem;
+    padding-left: 0 !important;
+  }
+
+  /* FOOTER */
+  .space {
+    padding: 2rem 1rem 0 1rem !important;
+  }
+
+  .container.space {
+    gap: 1.5rem;
+}
+
+  footer .container {
+    flex-direction: column !important;
+  }
+
+  .align-end {
+    align-items: start !important;
   }
 }
 
