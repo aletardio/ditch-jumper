@@ -404,7 +404,7 @@ body {
     font-size: 1.25rem !important;
   }
 
-  .col-7, .col-4, .col-5 {
+  .col-7, .col-4, .col-5, col-8 {
     width: 100% !important;
   }
 
@@ -421,6 +421,10 @@ body {
   .section-5, .section-6 {
     padding: 3rem 1rem !important;
   }
+
+  .container-faq .container-section-1 .col-2 {
+    display: none !important;
+}
 
   /* SECTION 6 */
   .section-6 .container-section-1 {
