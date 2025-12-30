@@ -215,11 +215,12 @@ body {
     padding: 1.25rem 0;
     box-sizing: border-box;
     overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .mobile-menu-header {
     width: 100%;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
@@ -308,11 +309,16 @@ body {
   body .menu-item-type-custom a {
     color: #000000 !important;
     text-decoration: none !important;
+    text-align: start;
   }
 
   ul#primary-menu {
     gap: 0.5rem !important;
   }
+
+  nav#site-navigation {
+    padding: 0 1rem;
+}
 
 
   /* HERO */
