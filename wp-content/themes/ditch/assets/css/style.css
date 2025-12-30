@@ -379,6 +379,14 @@ body {
   .align-end {
     align-items: start !important;
   }
+
+  .site-footer {
+    gap: 3rem !important;
+  }
+
+  .heading-footer .text-xxs {
+    font-size: 1.25rem !important;
+  }
 }
 
 /* HEADER */
