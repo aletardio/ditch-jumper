@@ -245,8 +245,8 @@ body {
   
   .mobile-menu-close {
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 1rem;
+    right: 1rem;
     background: none;
     border: none;
     color: #000;
