@@ -286,6 +286,29 @@ body {
       padding: 0 1rem !important;
       gap: 2rem;
     }
+
+    /* SECTION 4 */
+    .section-4 {
+      padding: 2rem 0 !important;
+    }
+
+    .container-section-4 {
+      flex-direction: column !important;
+      padding: 1rem !important;
+      gap: 1.5rem;
+    }
+
+    .text-sm {
+      font-size: 1.25rem !important;
+    }
+
+    .col-7, .col-4 {
+      width: 100% !important;
+    }
+
+    .container-section-4.border-gray .col-1 {
+      display: none;
+    }
 }
 
 /* HEADER */
