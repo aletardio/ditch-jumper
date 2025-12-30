@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const elementTop = element.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
             
-            if (elementTop < windowHeight - 100) {
+            if (elementTop < windowHeight - 0) {
                 element.classList.add('active');
             }
         });
