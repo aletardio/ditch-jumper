@@ -306,7 +306,7 @@ body {
   }
 
   /* MENU */
-  .menu-item-type-custom a {
+  body .menu-item-type-custom a {
     color: #000000 !important;
     text-decoration: none !important;
   }

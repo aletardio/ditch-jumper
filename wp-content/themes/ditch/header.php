@@ -37,17 +37,12 @@
 			<!-- Menu Mobile -->
 			<div class="site-header__col--nav">
                 <div class="mobile-menu-header">
-                    <a href="<?php echo esc_url(home_url('/')); ?>" class="site-header__logo" rel="home">
-                        <?php 
-                        $custom_logo_id = get_theme_mod('custom_logo');
-                        $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
-                        if (has_custom_logo()) {
-                            echo '<img src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '" class="site-header__logo">';
-                        } else {
-                            echo '<span class="site-title">' . get_bloginfo('name') . '</span>';
-                        }
-                        ?>
-                    </a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-header__logo">
+						<img style="filter:invert(1)"
+						src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/DITCH JUMPER.svg' ); ?>"
+						alt="Ditch Jumper"
+						>
+					</a>
                     <button class="mobile-menu-close" aria-label="Chiudi menu">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
