@@ -9,12 +9,25 @@ $link_macchina = get_field( 'link_macchina' );         // URL esterna/opzionale
 $card_url      = $link_macchina ? $link_macchina : get_permalink();
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'macchina-card' ); ?>>
-  <a href="<?php echo esc_url( $card_url ); ?>" class="macchina-card__link">
+<?php
+/**
+ * Template part for displaying posts in the Macchine archive
+ *
+ * @package Ditch_Jumper
+ */
+
+$link_macchina = get_field('link_macchina'); // URL esterna/opzionale
+?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class('macchina-card'); ?>>
+  <?php if ($link_macchina) : ?>
+    <a href="<?php echo esc_url($link_macchina); ?>" class="macchina-card__link" target="_blank">
+  <?php endif; ?>
+
     <div class="macchina-card__inner">
-      <?php if ( has_post_thumbnail() ) : ?>
+      <?php if (has_post_thumbnail()) : ?>
         <div class="macchina-card__image">
-          <?php the_post_thumbnail( 'large' ); ?>
+          <?php the_post_thumbnail('large'); ?>
         </div>
       <?php endif; ?>
 
@@ -24,30 +37,30 @@ $card_url      = $link_macchina ? $link_macchina : get_permalink();
             <?php the_title(); ?>
           </h2>
 
-          <?php if ( $prezzo = get_field( 'prezzo' ) ) : ?>
+          <?php if ($prezzo = get_field('prezzo')) : ?>
             <div class="macchina-card__price text-sm">
-              <?php echo esc_html( $prezzo ); ?>
+              <?php echo esc_html($prezzo); ?>
             </div>
           <?php endif; ?>
         </header>
 
         <div class="macchina-card__tags">
-          <?php if ( $alimentazione = get_field( 'alimentazione' ) ) : ?>
-            <span class="tag text-xxs"><?php echo esc_html( $alimentazione ); ?></span>
+          <?php if ($alimentazione = get_field('alimentazione')) : ?>
+            <span class="tag text-xxs"><?php echo esc_html($alimentazione); ?></span>
           <?php endif; ?>
 
-          <?php if ( $anno = get_field( 'anno' ) ) : ?>
-            <span class="tag text-xxs"><?php echo esc_html( $anno ); ?></span>
+          <?php if ($anno = get_field('anno')) : ?>
+            <span class="tag text-xxs"><?php echo esc_html($anno); ?></span>
           <?php endif; ?>
 
-          <?php if ( $chilometraggio = get_field( 'chilometraggio' ) ) : ?>
-            <span class="tag text-xxs"><?php echo esc_html( $chilometraggio ); ?></span>
+          <?php if ($chilometraggio = get_field('chilometraggio')) : ?>
+            <span class="tag text-xxs"><?php echo esc_html($chilometraggio); ?></span>
           <?php endif; ?>
         </div>
 
-        <?php if ( $descr = get_field( 'descrizione' ) ) : ?>
+        <?php if ($descr = get_field('descrizione')) : ?>
           <div class="macchina-card__description text-xs text-initial">
-            <?php echo wp_kses_post( $descr ); ?>
+            <?php echo wp_kses_post($descr); ?>
           </div>
         <?php endif; ?>
 
@@ -65,5 +78,8 @@ $card_url      = $link_macchina ? $link_macchina : get_permalink();
         </div>
       </div>
     </div>
-  </a>
+
+  <?php if ($link_macchina) : ?>
+    </a>
+  <?php endif; ?>
 </article>
