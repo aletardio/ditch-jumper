@@ -434,6 +434,10 @@ body {
     margin-top: 2rem !important;
   }
 
+  .macchina-card__description {
+    width: 100%;
+  }
+
   /* SECTION 3 */
   .container-section-3 {
     gap: 3rem !important;
