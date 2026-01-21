@@ -38,10 +38,12 @@
 			<div class="site-header__col--nav">
                 <div class="mobile-menu-header">
 					<div class="_70">
-						<img style="filter:invert(1)"
-						src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/DITCH JUMPER.svg' ); ?>"
-						alt="Ditch Jumper"
-						>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-header__logo">
+							<img style="filter:invert(1)"
+							src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/DITCH JUMPER.svg' ); ?>"
+							alt="Ditch Jumper"
+							>
+						</a>
 					</div>
 					<div class="_30">
 						<button class="mobile-menu-close" aria-label="Chiudi menu">
