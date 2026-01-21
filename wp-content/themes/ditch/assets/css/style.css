@@ -175,10 +175,21 @@ body {
   display: none;
 }
 
-/* Stili per il menu su mobile */
-@media (max-width: 1024px) {
+@media screen and (max-width:1024px) {
   .site-header__inner {
-    padding: 1rem !important;
+      padding: 1.25rem 1.5rem !important;
+  }
+
+  .container-hero {
+      padding-left: 1.5rem !important;
+      padding-bottom: 3rem !important;
+  }
+}
+
+/* Stili per il menu su mobile */
+@media (max-width: 767px) {
+  .site-header__inner {
+      padding: 1rem !important;
   }
 
   .col-4.site-header__col.site-header__col--logo,
