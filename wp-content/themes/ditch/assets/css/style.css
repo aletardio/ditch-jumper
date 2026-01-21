@@ -180,9 +180,13 @@ body {
     padding: 1.25rem 0;
   }
 
+  .mobile-menu-header {
+    padding-top: .15rem;
+  }
+
   .mobile-menu-close {
-    top: 1rem;
-    right: 1rem;
+    top: 1.35rem;
+    right: 1.25rem;
   }
 
   .mobile-menu-close svg {
@@ -255,7 +259,6 @@ body {
 
   .mobile-menu-header {
     width: 100%;
-    padding: 0 1rem;
     margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
@@ -355,10 +358,6 @@ body {
   ul#primary-menu {
     gap: 0.5rem !important;
   }
-
-  nav#site-navigation {
-    padding: 0 1rem;
-}
 
 
   /* HERO */
