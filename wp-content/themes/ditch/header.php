@@ -34,7 +34,7 @@
 				</a>
 			</div>
 
-			<!-- Menu Mobile -->
+			<!-- Menu Tablet / Mobile -->
 			<div class="site-header__col--nav">
                 <div class="mobile-menu-header">
 					<img style="filter:invert(1)"
