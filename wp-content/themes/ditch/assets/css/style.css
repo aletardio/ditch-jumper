@@ -197,7 +197,8 @@ body {
 
   .col-4.site-header__col.site-header__col--logo._70 img,
   ._70 img {
-    width: 100%;
+    width: 15rem;
+    padding-top: 3px;
   }
 
   .col-2.site-header__col.site-header__col--cta._30,
