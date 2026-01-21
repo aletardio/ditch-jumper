@@ -390,7 +390,7 @@ body {
 
   /* SECTION 1 */
   .section-1 {
-    padding: 4rem 0 !important;
+    padding: 4rem 0.5rem !important;
   }
 
   .section-1-col-1,
@@ -413,9 +413,17 @@ body {
     border: 0 !important;
   }
 
+  .funzionamento-item {
+    padding: 0;
+  }
+
+  .funzionamento-item.border .descrizione {
+      width: 70%;
+  }
+
   /* SECTION 2 */
   .container-macchine {
-    padding: 0 1rem !important;
+    padding: 0 1.5rem !important;
   }
 
   .hero-buttons {
@@ -731,6 +739,14 @@ body {
   .info-section.border,
   .funzionamento-item.border {
     border: 0 !important;
+  }
+
+  .funzionamento-item {
+    padding: 0 1rem;
+  }
+
+  .funzionamento-item.border .descrizione {
+      width: 100%;
   }
 
   /* SECTION 2 */
