@@ -128,10 +128,10 @@ get_header();
                         // se non esiste il link uso # come fallback
                         $href = $cta_link ? $cta_link : '#';
                     ?>
-                        <a href="<?php echo esc_url( $href ); ?>">
                 <button class="btn btn-primary text-xxs">
+                    <a href="<?php echo esc_url( $href ); ?>" target="_blank">
                         <span class="btn-text"><?php echo esc_html( $cta_text ); ?></span>
-                        </a>
+                    </a>
                     <?php endif; ?>
                 </button>
             </div>
