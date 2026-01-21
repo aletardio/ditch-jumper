@@ -160,6 +160,55 @@ function ditch_flush_rewrite_rules() {
 }
 register_activation_hook( __FILE__, 'ditch_flush_rewrite_rules' );
 
+// Custom login
+function my_login_page_remove_back_to_link() { ?>
+    <style type="text/css">
+		body.login div#login form#loginform p.submit input#wp-submit {
+		 	background-color: #212121 !important;
+			color: #fff;
+			text-transform: uppercase;
+			border: 1px solid  #212121 !important;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		
+		.login #backtoblog a, .login #nav a {
+			text-decoration: none;
+			color: #000000 !important;
+		}
+		
+		body.login div#login form#loginform p.submit input#wp-submit:hover {
+		  	background-color: #fff !important;
+		  	transition: all 0.3s ease;
+			border-color: #fff !important;
+		}
+		
+		body  {
+		  background-color: #E1E6E8 !important;
+		}
+		
+		body.login div#login a {
+		  color: #000 !important;
+		}
+		
+		.login input[type=password], .login input[type=text]
+		{
+		  border: 0 0 1px 0 solid !important;
+			border-radius: 0 !important; 
+		}
+
+		.login h1 a {
+			background-image: url(../wp-content/uploads/2025/12/DITCH-JUMPER.svg) !important;
+			background-size: 300px !important;
+			width: 300px !important;
+			height: 60px !important;
+			filter: invert(1);
+		}
+    </style>
+<?php }
+
+add_action( 'login_enqueue_scripts', 'my_login_page_remove_back_to_link' );
+
 /**
  * Enqueue scripts and styles.
  */
