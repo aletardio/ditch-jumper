@@ -997,8 +997,8 @@ button.btn.btn-secondary.text-xxs svg {
 }
 
 button.btn.btn-secondary.text-xxs:hover {
-    background: #000;
-    color: #fff;
+    background: #000 !important;
+    color: #fff !important;
 }
 
 button.btn.btn-secondary.text-xxs:hover svg path{
