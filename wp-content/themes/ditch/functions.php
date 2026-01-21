@@ -146,7 +146,7 @@ function ditch_register_macchine_post_type() {
             ),
             'public'      => true,
             'has_archive' => true,
-            'supports'    => array( 'title', 'editor', 'thumbnail', 'excerpt', 'custom-fields' ),
+            'supports'    => array( 'title', 'thumbnail', 'excerpt', 'custom-fields' ),
             'menu_icon'   => 'dashicons-car',
         )
     );
