@@ -180,7 +180,7 @@ function my_login_page_remove_back_to_link() { ?>
 		body.login div#login form#loginform p.submit input#wp-submit:hover {
 		  	background-color: #fff !important;
 		  	transition: all 0.3s ease;
-			border-color: #fff !important;
+			border-color: #000 !important;
 			color: #000;
 		}
 		
