@@ -985,6 +985,7 @@ p.text-s {
 button.btn.btn-secondary.text-xxs {
     width: fit-content;
     background: #fff;
+    color: #000;
     border: 0;
     padding: 1.75rem 2.5rem;
     border-radius: 50px;
@@ -1351,6 +1352,7 @@ img.img-fluid {
     text-align: left;
     padding: 1.88rem;
     background: none;
+    color: #000;
     border: none;
     display: flex;
     justify-content: space-between;
