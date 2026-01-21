@@ -435,7 +435,7 @@ body {
   }
 
   .macchina-card__description {
-    width: 100%;
+    width: 100% !important;
   }
 
   /* SECTION 3 */
