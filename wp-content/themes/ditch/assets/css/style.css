@@ -393,10 +393,14 @@ body {
     padding: 4rem 0 !important;
   }
 
+  section-1-col-1 {
+    display: none;
+  }
+  
   .section-1-col-2 {
     width: 100% !important;
-    flex-direction: column !important;
-    gap: 2.5rem;
+    flex-direction: row !important;
+    gap: 0.5rem;
   }
 
   .section-1-col-2 .info-section, .title-section {
