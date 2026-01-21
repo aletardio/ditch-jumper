@@ -189,6 +189,18 @@ body {
     width: 24px;
     height: 24px;
   }
+
+  .col-4.site-header__col.site-header__col--logo._70 {
+    width: 70% !important;
+  }
+
+  .col-4.site-header__col.site-header__col--logo._70 img {
+    width: 100%;
+  }
+
+  .col-2.site-header__col.site-header__col--cta._30 {
+    width: 30% !important;
+  }
 }
 
 @media screen and (max-width:1024px) {
