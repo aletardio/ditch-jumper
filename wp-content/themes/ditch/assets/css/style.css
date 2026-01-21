@@ -452,7 +452,7 @@ body {
 
   .container-section-4 {
     flex-direction: column !important;
-    padding: 1rem !important;
+    padding: 1rem 1.5rem !important;
     padding-bottom: 3rem !important;
     gap: 1.5rem;
   }
@@ -476,7 +476,7 @@ body {
 
   /* SECTION 5 */
   .section-5, .section-6 {
-    padding: 3rem 1rem !important;
+    padding: 3rem 1.5rem !important;
   }
 
   .container-faq .container-section-1 .col-2 {
@@ -513,8 +513,7 @@ body {
   }
 
   .container-section-1 .col-5 {
-    padding-top: 3rem;
-    padding-left: 0 !important;
+    display: none;
   }
 
   /* FOOTER */
@@ -838,11 +837,6 @@ body {
   .form-grid input[type="tel"], 
   .form-grid textarea {
     padding: .6rem 0 !important;
-  }
-
-  .container-section-1 .col-5 {
-    padding-top: 3rem;
-    padding-left: 0 !important;
   }
 
   /* FOOTER */
