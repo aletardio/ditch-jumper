@@ -593,7 +593,7 @@ body {
   }
 
   .mobile-menu-header .site-header__logo img {
-    width: 100%;
+    width: auto;
     height: auto;
     filter: brightness(0); /* Rende il logo nero */
   }
