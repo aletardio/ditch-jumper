@@ -176,7 +176,7 @@ body {
 }
 
 /* Stili per il menu su mobile */
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .site-header__inner {
     padding: 1rem !important;
   }
