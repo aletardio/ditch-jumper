@@ -37,15 +37,19 @@
 			<!-- Menu Tablet / Mobile -->
 			<div class="site-header__col--nav">
                 <div class="mobile-menu-header">
-					<img style="filter:invert(1)"
-					src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/DITCH JUMPER.svg' ); ?>"
-					alt="Ditch Jumper"
-					>
-                    <button class="mobile-menu-close" aria-label="Chiudi menu">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
+					<div class="col-4 site-header__col site-header__col--logo">
+						<img style="filter:invert(1)"
+						src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/DITCH JUMPER.svg' ); ?>"
+						alt="Ditch Jumper"
+						>
+					</div>
+					<div class="col-4 site-header__col site-header__col--logo">
+						<button class="mobile-menu-close" aria-label="Chiudi menu">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+					</div>
                 </div>
 				<nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e('Menu principale', 'ditch'); ?>">
 					<?php
