@@ -181,6 +181,7 @@ function my_login_page_remove_back_to_link() { ?>
 		  	background-color: #fff !important;
 		  	transition: all 0.3s ease;
 			border-color: #fff !important;
+			color: #000;
 		}
 		
 		body  {
@@ -191,8 +192,7 @@ function my_login_page_remove_back_to_link() { ?>
 		  color: #000 !important;
 		}
 		
-		.login input[type=password], .login input[type=text]
-		{
+		.login input[type=password], .login input[type=text] {
 		  border: 0 0 1px 0 solid !important;
 			border-radius: 0 !important; 
 		}
